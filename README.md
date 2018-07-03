@@ -53,7 +53,7 @@
 |---|---|---|---|
 |type|Integer|搜索类型,1-出租,2-合租|是|
 |name|String|搜索关键字|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -70,15 +70,15 @@
 ```
 ## 投诉/建议/反馈
 ### 反馈
-* 接口:/ProfileController/feedback
-* 请求方式:POST
-* 接口参数
+##### 接口:/ProfileController/feedback
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |url|String|图片url|否|
 |content|String|反馈内容|是|
 |contact|String|联系方式|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -88,12 +88,12 @@
 
 ## 交互（社区/评论/动态/通知/点赞/收藏/分享）
 ### 点击push消息
-* 接口:/UserController/clickPush
-* 请求方式:GET
+##### 接口:/UserController/clickPush
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |uid|String|pushId|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
 	"ret": 200,
@@ -102,12 +102,12 @@
 ```
 
 ### 客户端私信调用
-* 接口:/PrivateMsgController/sendMessage
-* 请求方式:GET
+##### 接口:/PrivateMsgController/sendMessage
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |toUserId|long|被私信的用户id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
 	"ret": 200,
@@ -116,16 +116,16 @@
 ```
 
 ### 参与活动用户列表
-* 接口:/CommunityController/joinUsers
-* 请求方式:POST
-* 接口参数
+##### 接口:/CommunityController/joinUsers
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |infoId|Long|主题id|是|
 |infoType|String|GANG/ACTIVITY|是|
 |page|Integer|>=1|是|
 |pageSize|Integer|>=1|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -164,13 +164,13 @@
 ```
 
 ### 分享动态
-* 接口:/CommunityController/share
-* 请求方式:POST
-* 接口参数
+##### 接口:/CommunityController/share
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |infoId|Long|动态id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -179,12 +179,12 @@
 ```
 
 ### 社区首页
-* 接口:/CommunityController/communityList
-* 请求方式:GET
-* 接口参数
+##### 接口:/CommunityController/communityList
+##### 请求方式:GET
+##### 接口参数
 无
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -256,14 +256,14 @@
 ```
 
 ### 活动页面
-* 接口:/CommunityController/gangDetail
-* 请求方式:GET
-* 接口参数
+##### 接口:/CommunityController/gangDetail
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|活动id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -409,16 +409,16 @@
 ```
 
 ### 动态分页
-* 接口:/CommunityController/dynamicList
-* 请求方式:GET
-* 接口参数
+##### 接口:/CommunityController/dynamicList
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |infoId|Long|主题id|是|
 |infoType|String|GANG/ACTIVITY|是|
 |page|Integer|>=1|否，默认1|
 |order|String|new/hot|否，默认new|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -460,13 +460,13 @@
 ```
 
 ### 动态详情
-* 接口:/CommunityController/dynamicDetail
-* 请求方式:GET
-* 接口参数
+##### 接口:/CommunityController/dynamicDetail
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|动态|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -629,13 +629,13 @@
 ```
 
 ### 动态点赞
-* 接口:/CommunityController/liked
-* 请求方式:POST
-* 接口参数
+##### 接口:/CommunityController/liked
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|动态|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -644,13 +644,13 @@
 ```
 
 ### 取消动态点赞
-* 接口:/CommunityController/unliked
-* 请求方式:POST
-* 接口参数
+##### 接口:/CommunityController/unliked
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|动态|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -659,15 +659,15 @@
 ```
 
 ### 被收藏列表
-* 接口:/UserController/passiveLikeList
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/passiveLikeList
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |page|Long|page|是|
 |pageSize|Long|pageSize|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -676,14 +676,14 @@
 ```
 
 ### 过滤被封禁用户
-* 接口:/UserController/filterForbiddenUser
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/filterForbiddenUser
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |destUserIds|List<Long>|需要被过滤的用户id list|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -692,14 +692,14 @@
 ```
 
 ### 判断是否被拉黑
-* 接口:/UserController/hasLoggedIn
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/hasLoggedIn
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|对方userId|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -707,13 +707,13 @@
 }
 ```
 ### 私信发短信
-* 接口:/PrivateMsgController/sendMessage
-* 请求方式:POST
-* 接口参数
+##### 接口:/PrivateMsgController/sendMessage
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |toUserId|Long|被评论人的的ID|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -721,14 +721,14 @@
 }
 ```
 ### 拉黑
-* 接口:/UserController/blockUser
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/blockUser
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |blockUserId|Long|被拉黑人的Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -737,14 +737,14 @@
 ```
 
 ### 取消拉黑
-* 接口:/ProfileController/unBlock
-* 请求方式:POST
-* 接口参数
+##### 接口:/ProfileController/unBlock
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |blockedUserId|Long|被拉黑人的Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -753,14 +753,14 @@
 ```
 
 ### 删除评论
-* 接口:/ProfileController/removeMessage
-* 请求方式:POST
-* 接口参数
+##### 接口:/ProfileController/removeMessage
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |messageId|Long|消息Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -769,14 +769,14 @@
 ```
 
 ### 查询是否有未读消息
-* 接口:/UserController/hasNewMessages
-* 请求方式:GET
-* 接口参数
+##### 接口:/UserController/hasNewMessages
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |lastLikeTime|Long|最新收到的点赞或分享时间，没有传0|是|
 |lastSentTime|Long|最新收到的评论时间，没有传0|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -785,13 +785,13 @@
 ```
 
 ### 喜欢/收藏出租
-* 接口:/HouseController/like
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseController/like
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|房源id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -800,13 +800,13 @@
 ```
 
 ### 取消喜欢/收藏出租
-* 接口:/HouseController/unlike
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseController/unlike
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|房源id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -815,13 +815,13 @@
 ```
 
 ### 喜欢/收藏求租
-* 接口:/HouseRequestController/like
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseRequestController/like
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|房源id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -830,13 +830,13 @@
 ```
 
 ### 取消喜欢/收藏求租
-* 接口:/HouseRequestController/unlike
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseRequestController/unlike
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|房源id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -845,16 +845,16 @@
 ```
 
 ### 喜欢/收藏列表
-* 接口:/UserController/likeList
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/likeList
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |type|String|HOUSE/HOUSE_REQUEST|是|
 |page|int|>=1|否|
 |pageSize|int|>=1|否|
-* 成功返回
-* 有房列表如下
+##### 成功返回
+##### 有房列表如下
 ```
 {
   "ret": 200,
@@ -920,7 +920,7 @@
   ]
 }
 ```
-* 无房列表如下
+##### 无房列表如下
 ```
 {
   "ret": 200,
@@ -960,9 +960,9 @@
 }
 ```
 ### 评论
-* 接口:/ProfileController/comment
-* 请求方式:POST
-* 接口参数
+##### 接口:/ProfileController/comment
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |toUserId|Long||是|
@@ -972,7 +972,7 @@
 |parentId|Long|父消息ID只有二级|否|
 |isReply|boolean|是否是回复|是|
 |baseId|Long|回复谁就是谁的ID|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -981,14 +981,14 @@
 ```
 
 ### 通知评论
-* 接口:ProfileController/messageByLoginUserId
-* 请求方式:GET
-* 接口参数
+##### 接口:ProfileController/messageByLoginUserId
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |page|int|分页|是|
 |pageSize|int|分页|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1093,13 +1093,13 @@
 
 
 ### 动态点赞
-* 接口:CommunityController/like
-* 请求方式:POST
-* 接口参数
+##### 接口:CommunityController/like
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |infoId|Long|分页|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1108,13 +1108,13 @@
 ```
 
 ### 动态分享
-* 接口:CommunityController/share
-* 请求方式:POST
-* 接口参数
+##### 接口:CommunityController/share
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |infoId|Long|分页|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1123,14 +1123,14 @@
 ```
 
 ### 通知列表-点赞/分享
-* 接口:UserController/getLikeNotifications
-* 请求方式:POST
-* 接口参数
+##### 接口:UserController/getLikeNotifications
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |page|int|页数，1开始，默认1|否|
 |pageSize|int|条数，默认20|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1177,13 +1177,13 @@
 ```
 
 ### 查看回复
-* 接口:/ProfileController/replyMessageByParent
-* 请求方式:GET
-* 接口参数
+##### 接口:/ProfileController/replyMessageByParent
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |parentId|Long|父消息ID只有二级|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1240,11 +1240,11 @@
 ## 配置/第三方配置/数据
 
 ### 基础配置
-* 接口:/Application/config
-* 请求方式:GET
-* 接口参数
+##### 接口:/Application/config
+##### 请求方式:GET
+##### 接口参数
 无
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1255,13 +1255,13 @@
 ```
 
 ### 支付接口
-* 接口:/WeChatController/unifiedOrder
-* 请求方式:POST
-* 接口参数
+##### 接口:/WeChatController/unifiedOrder
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |orderId|Long|订单ID|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1282,13 +1282,13 @@
 ```
 
 ### 查询支付结果接口
-* 接口:/WeChatController/queryOrder
-* 请求方式:GET
-* 接口参数
+##### 接口:/WeChatController/queryOrder
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |orderId|Long|订单ID|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1315,9 +1315,9 @@
 ```
 
 ### 腾讯云图片上传配置
-* 接口:/Application/qcloudCosConfig
-* 请求方式:GET
-* 成功返回值
+##### 接口:/Application/qcloudCosConfig
+##### 请求方式:GET
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1332,10 +1332,10 @@
 ```
 
 ### 阿里api签名
-* 接口:/UserController/aliSignInfo
-* 请求方式:GET
-* 接口参数
-* 成功返回值
+##### 接口:/UserController/aliSignInfo
+##### 请求方式:GET
+##### 接口参数
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1344,13 +1344,13 @@
 ```
 
 ### 是否做过芝麻认证
-* 接口:/UserController/getZmScore
-* 请求方式:GET
-* 接口参数
+##### 接口:/UserController/getZmScore
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |authCode|String|authCode|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1360,11 +1360,11 @@
 
 ## 地域
 ### 新版城市列表
-* 接口:/LocationController/cities
-* 请求方式:GET
-* 接口参数
+##### 接口:/LocationController/cities
+##### 请求方式:GET
+##### 接口参数
 无
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1395,11 +1395,11 @@
 ```
 
 ### 省份列表
-* 接口:/LocationController/provinces
-* 请求方式:GET
-* 接口参数
+##### 接口:/LocationController/provinces
+##### 请求方式:GET
+##### 接口参数
 无
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1416,13 +1416,13 @@
 ```
 
 ### 城市列表
-* 接口:/LocationController/getCitiesByProvinceId
-* 请求方式:GET
-* 接口参数
+##### 接口:/LocationController/getCitiesByProvinceId
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |provinceId|Long|省份id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1440,9 +1440,9 @@
 ```
 
 ### 获取城市
-* 接口:/LocationController/openCities
-* 请求方式:GET
-* 成功返回值
+##### 接口:/LocationController/openCities
+##### 请求方式:GET
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1462,14 +1462,14 @@
 ```
 
 ### 获取区域
-* 接口:/ProfileController/areas
-* 请求方式:GET
+##### 接口:/ProfileController/areas
+##### 请求方式:GET
 
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |cityId|Long|城市ID|是|
 
-* 成功返回值
+##### 成功返回值
 
 ```
 {
@@ -1490,14 +1490,14 @@
 ```
 
 ### 获取商圈
-* 接口:/ProfileController/businessAreas
-* 请求方式:GET
+##### 接口:/ProfileController/businessAreas
+##### 请求方式:GET
 
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |areaId|Long|区域ID|是|
 
-* 成功返回值
+##### 成功返回值
 
 ```
 {
@@ -1515,13 +1515,13 @@
 ```
 
 ### 获取地铁线
-* 接口:/ProfileController/subways
-* 请求方式:GET
-* 接口参数
+##### 接口:/ProfileController/subways
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1530,14 +1530,14 @@
 ```
 
 ### 获取地铁站
-* 接口:/ProfileController/subwayStations
-* 请求方式:GET
-* 接口参数
+##### 接口:/ProfileController/subwayStations
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |subwayId|Long|地铁线ID|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1546,16 +1546,16 @@
 ```
 
 ### 模糊搜索小区
-* 接口:/ProfileController/communities
-* 请求方式:GET
-* 接口参数
+##### 接口:/ProfileController/communities
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |cityId|Long|城市ID|是|
 |communityName|String|名称|是|
 |lat|Double|纬度|否|
 |lon|Double|经度|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1608,13 +1608,13 @@
 
 ## 用户
 ### 获取登录人信息
-* 接口:/UserController/me
-* 请求方式:GET
+##### 接口:/UserController/me
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |token|String|token|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
@@ -1636,7 +1636,7 @@
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr*36xzDDJ2xdhQwXUP*eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT*PjS-jGz5qW-E_",
+    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_",
     "isAdministrators": true,
     "apartmentName": "自如公寓",
     apartmentCityId: 1,
@@ -1647,15 +1647,15 @@
 ```
 
 ### 用户删除推荐给他的用户
-* 接口:/ProfileController/excludeCommend
-* 请求方式:POST
-* 接口参数
+##### 接口:/ProfileController/excludeCommend
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|删除推荐用户的ID|是|
 |type|String|类型|是，HOUSE、HOUSE_REQUEST|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1664,16 +1664,16 @@
 ```
 
 ### 小程序登录注册接口
-* 接口:/UserController/register
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/register
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |code|String|授权code|是|
 |nickname|String|昵称|是|
 |sex|Integer|性别|是|
 |headimgurl|String|头像|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1701,14 +1701,14 @@
 ```
 
 ### 隐私设置
-* 接口:/UserController/privacySettings
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/privacySettings
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |privacy|int|1不空开 0 公开|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1717,9 +1717,9 @@
 ```
 
 ### 年龄标签列表
-* 接口:/EnumController/ageLabel
-* 请求方式:GET
-* 成功返回值
+##### 接口:/EnumController/ageLabel
+##### 请求方式:GET
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1749,13 +1749,13 @@
 ```
 
 ### 更新pushToken
-* 接口:/UserController/updatePushToken
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/updatePushToken
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |pushToken|String|pushToken|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1764,13 +1764,13 @@
 ```
 
 ### 微信注册/登录
-* 接口:/UserController/loginByWeChat
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/loginByWeChat
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |code|字符串|第三方登录凭证|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1792,7 +1792,7 @@
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr*36xzDDJ2xdhQwXUP*eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT*PjS-jGz5qW-E_",
+    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_",
     "isAdministrators": true,
     "apartmentName": "自如公寓",
     apartmentCityId: 1,
@@ -1803,13 +1803,13 @@
 ```
 
 ### 获取登录验证码
-* 接口:/UserController/generateCode
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/generateCode
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |mobileNumber|字符串|手机号码|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1818,14 +1818,14 @@
 ```
 
 ### 手机号码注册/登录
-* 接口:/UserController/loginByMobile
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/loginByMobile
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |code|字符串|第三方登录凭证|是|
 |mobileNumber|字符串|手机号码|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1847,15 +1847,15 @@
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr*36xzDDJ2xdhQwXUP*eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT*PjS-jGz5qW-E_"
+    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_"
   }
 }
 ```
 
 ### 注销（退出登录）
-* 接口:/UserController/logout
-* 请求方式:POST
-* 成功返回值
+##### 接口:/UserController/logout
+##### 请求方式:POST
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1864,14 +1864,14 @@
 ```
 
 ### 举报
-* 接口:UserController/report
-* 请求方式:POST
-* 接口参数
+##### 接口:UserController/report
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|被举报的用户id|是|
 |reason|Integer|1-中介，2-广告、推销，3-不友善行为，4-其他|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1880,14 +1880,14 @@
 ```
 
 ### 绑定手机号码
-* 接口:/UserController/bindMobile
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/bindMobile
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |mobileNumber|String|手机号码|是|
 |code|String|验证码|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1896,13 +1896,13 @@
 ```
 
 ### 根据用户ID获取用户信息
-* 接口:/UserController/findById
-* 请求方式:GET
-* 接口参数
+##### 接口:/UserController/findById
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|用户ID|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1913,9 +1913,9 @@
 ```
 
 ### 更新个人信息
-* 接口:/UserController/updateProfile
-* 请求方式:POST
-* 接口参数
+##### 接口:/UserController/updateProfile
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |avatar|String|头像|否|
@@ -1927,7 +1927,7 @@
 |career|String|职业|否|
 |favorite|String|个人爱好|否|
 |background|String|个人爱好|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -1936,9 +1936,9 @@
 ```
 
 ### 我的发布
-* 接口:/UserController/myPublication
-* 请求方式:GET
-* 成功返回值
+##### 接口:/UserController/myPublication
+##### 请求方式:GET
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2020,13 +2020,13 @@
 ```
 
 ### 看过我的
-* 接口:ProfileController/seen
-* 请求方式:GET
-* 接口参数
+##### 接口:ProfileController/seen
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|用户Id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2051,13 +2051,13 @@
 ```
 
 ### 个人主页
-* 接口:UserController/personalHomePage
-* 请求方式:GET
-* 接口参数
+##### 接口:UserController/personalHomePage
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |userId|Long|用户Id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2209,9 +2209,9 @@
 ```
 
 ### 离线时看过我的用户（杀掉进程到重新启动这段时间）
-* 接口:ProfileController/seeMe
-* 请求方式:GET
-* 接口参数
+##### 接口:ProfileController/seeMe
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |startTime|double|杀掉进程时候的时间|是|
@@ -2225,9 +2225,9 @@
 
 ##房源&求租
 ### 出租列表
-* 接口:/chuzu|/chuzu/axxxbxxxcxxxuxxx?page=...
-* 请求方式:POST
-* 接口参数
+##### 接口:/chuzu|/chuzu/axxxbxxxcxxxuxxx?page=...
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |a|+数字|年龄标签(年龄复选的话例如a123)|否|
@@ -2345,9 +2345,9 @@
 ```
 
 ### 求租列表
-* 接口:/qiuzu|/qiuzu/axxxbxxxcxxxuxxx?page=...
-* 请求方式:POST
-* 接口参数
+##### 接口:/qiuzu|/qiuzu/axxxbxxxcxxxuxxx?page=...
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |a|+数字|年龄标签|否|
@@ -2422,9 +2422,9 @@
 ```
 
 ### 有房发布&更新
-* 接口:/HouseController/publishOrUpdate
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseController/publishOrUpdate
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|否|
@@ -2461,7 +2461,7 @@
 |identity|int|1 我是房东 2 我要转租 3 我要合租|否|
 |toiletCount|int|厕所个数|否|
 |contractPlan|boolean|是否参与去签约计划|否|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2510,9 +2510,9 @@
 ```
 
 ### 无房发布&更新
-* 接口:/HouseRequestController/publishOrUpdate
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseRequestController/publishOrUpdate
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|否|
@@ -2528,7 +2528,7 @@
 |expectedSubwayStationId|String|期望地铁站 空格隔开|否|
 |expectedSubwayId|String|对应地铁站的地铁线ID 空格隔开|否|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2549,14 +2549,14 @@
 ```
 
 ### 有房详情
-* 接口:/HouseController/findById
-* 请求方式:GET
+##### 接口:/HouseController/findById
+##### 请求方式:GET
 
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2761,14 +2761,14 @@
 ```
 
 ### 无房详情
-* 接口:/HouseRequestController/findById
-* 请求方式:GET
+##### 接口:/HouseRequestController/findById
+##### 请求方式:GET
 
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|是|
 
-* 成功返回值
+##### 成功返回值
 
 ```
 {
@@ -2817,14 +2817,14 @@
 ```
 
 ### 地图根据坐标查询附近房源
-* 接口:/HouseController/findNearbyHouses
-* 请求方式:GET
-* 接口参数
+##### 接口:/HouseController/findNearbyHouses
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |lat|Long|纬度|是|
 |lon|Long|经度|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2889,13 +2889,13 @@
 ```
 
 ### 获取求租信息（更新）
-* 接口:HouseRequestController/byId
-* 请求方式:GET
-* 接口参数
+##### 接口:HouseRequestController/byId
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2919,13 +2919,13 @@
 ```
 
 ### 获取房源信息（更新）
-* 接口:HouseController/byId
-* 请求方式:GET
-* 接口参数
+##### 接口:HouseController/byId
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|Long|id|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -2986,12 +2986,12 @@
 ```
 
 ### 查看登录用户是否可以发布房源和求租
-* 接口:/ProfileController/canPublish
-* 请求方式:GET
-* 接口参数
+##### 接口:/ProfileController/canPublish
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3003,14 +3003,14 @@
 ```
 
 ### 求租上架
-* 接口:/HouseRequestController/on
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseRequestController/on
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseRequestId|Long|求租Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3019,14 +3019,14 @@
 ```
 
 ### 求租下架
-* 接口:/HouseRequestController/off
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseRequestController/off
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseRequestId|Long|求租Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3035,14 +3035,14 @@
 ```
 
 ### 房源上架
-* 接口:/HouseController/on
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseController/on
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseId|Long|房子Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3051,14 +3051,14 @@
 ```
 
 ### 房源下架
-* 接口:/HouseController/off
-* 请求方式:POST
-* 接口参数
+##### 接口:/HouseController/off
+##### 请求方式:POST
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseId|Long|房子Id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3067,13 +3067,13 @@
 ```
 
 ### 发布权限检查
-* 接口:/ProfileController/checkPublish
-* 请求方式:GET
+##### 接口:/ProfileController/checkPublish
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |type|String|发布类型 ： HOUSE  HOUSE_REQUEST|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
@@ -3085,9 +3085,9 @@
 
 ##IM
 ### 需要在IM中展示的push信息
-* 接口:/UserController/imMessages
-* 请求方式:GET
-* 成功返回值
+##### 接口:/UserController/imMessages
+##### 请求方式:GET
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3125,13 +3125,13 @@
 
 ## 押金险/签约
 ### 获取购买押金险数量
-* 接口:/DepositController/depositCount
-* 请求方式:GET
-* 接口参数
+##### 接口:/DepositController/depositCount
+##### 请求方式:GET
+##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   "ret": 200,
@@ -3140,11 +3140,11 @@
 ```
 
 ### 查询押金险
-* 接口:/ActivityController/queryDeposit
-* 请求方式:GET
-* 接口参数
+##### 接口:/ActivityController/queryDeposit
+##### 请求方式:GET
+##### 接口参数
 公共参数
-* 成功返回值
+##### 成功返回值
 ```
 {
 	"ret": 200,
@@ -3159,9 +3159,9 @@
 
 
 ### 去签约介绍页
-* 接口:Application/contractPlanDetail
-* 请求方式:GET、
-* 成功返回值
+##### 接口:Application/contractPlanDetail
+##### 请求方式:GET、
+##### 成功返回值
 ```
 {
 ret: 200,
@@ -3289,11 +3289,11 @@ contractPlan: true
 }
 ```
 ### 去签约开关
-* 接口:/ActivityController/operate
-* 请求方式:GET
+##### 接口:/ActivityController/operate
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
-* 成功返回值
+##### 成功返回值
 ```
 {
 ret: 200,
@@ -3359,8 +3359,8 @@ expireTime: 545006014
 
 
 ### 线下签约
-* 接口:/SignController/offOnlineSave
-* 请求方式:POST
+##### 接口:/SignController/offOnlineSave
+##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseId|long|签约房源id|是|
@@ -3374,7 +3374,7 @@ expireTime: 545006014
 |lesseeName|String|承租方姓名|是|
 |contractUrl|String|合同照片(url 逗号隔开)|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
@@ -3383,13 +3383,13 @@ expireTime: 545006014
 ```
 
 ### 签约之前提示
-* 接口:/SignController/matchPromotion
-* 请求方式:POST
+##### 接口:/SignController/matchPromotion
+##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |houseId|long|签约房源id|是|
 
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
@@ -3411,13 +3411,13 @@ expireTime: 545006014
 
 ## 其他
 ### 生成海报
-* 接口:/ActivityController/getPoster
-* 请求方式:GET
+##### 接口:/ActivityController/getPoster
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |id|long|房源id|是|
 |type|int|房源类型 0出租 1求租|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
 	"ret": 200,
@@ -3428,15 +3428,15 @@ expireTime: 545006014
 ## 公寓
 
 ### 入驻申请
-* 接口:/UserController/initState
-* 请求方式:POST
+##### 接口:/UserController/initState
+##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |apartmentName|String|公寓名称|是|
 |apartmentCityId|Long|城市id|是|
 |phone|String|手机号|是|
 |code|String|验证码|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
@@ -3458,7 +3458,7 @@ expireTime: 545006014
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr*36xzDDJ2xdhQwXUP*eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT*PjS-jGz5qW-E_",
+    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_",
     "isAdministrators": true,
     "apartmentName": "自如公寓",
     apartmentCityId: 1,
@@ -3469,12 +3469,12 @@ expireTime: 545006014
 ```
 
 ### 我的交易(公寓房管员)
-* 接口:/SignController/housekeeperContract
-* 请求方式:GET
+##### 接口:/SignController/housekeeperContract
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |type|int|类型 0展示房源 上架 1签订中 2已签约 3已下架|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
 	"ret": 200,
@@ -3535,12 +3535,12 @@ expireTime: 545006014
 ```
 
 ### 管理员发布房源数量
-* 接口:/GoSignH5Controller/administratorsHouseCount
-* 请求方式:GET
+##### 接口:/GoSignH5Controller/administratorsHouseCount
+##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |token|String|token|是|
-* 成功返回值
+##### 成功返回值
 ```
 {
   ret: 200,
