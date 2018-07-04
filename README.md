@@ -3550,7 +3550,8 @@ expireTime: 545006014
 }
 ```
 
-### 钱包
+## 钱包
+### 查看钱包当前信息
 ##### 接口:/OperationController/account
 ##### 请求方式:GET
 ##### 成功返回值
