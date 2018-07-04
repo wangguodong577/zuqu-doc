@@ -3559,8 +3559,8 @@ expireTime: 545006014
 {
   ret: 200,
   data: {
-    bonusTotal: 100.12，
-    available: true
+    bonusTotal: 100.12，//账户余额
+    available: true//为ture表示可提现，false不可提现
   }
 }
 ```
