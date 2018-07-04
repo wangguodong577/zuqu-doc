@@ -3549,3 +3549,17 @@ expireTime: 545006014
   }
 }
 ```
+
+### 钱包
+##### 接口:/OperationController/account
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {
+    bonusTotal: 100.12，
+    available: true
+  }
+}
+```
