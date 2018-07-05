@@ -3565,8 +3565,25 @@ expireTime: 545006014
   ret: 200,
   data: {
     bonusTotal: 100.12，//账户余额
+    moneyInTransit: 40.22，//账户余额
     available: true//为ture表示可提现，false不可提现
   }
+}
+```
+
+### 获奖信息展示接口
+##### 接口:/OperationController/dynamic
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "name": "name1",
+      "amount": 99
+    }
+  ]
 }
 ```
 
