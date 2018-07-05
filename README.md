@@ -1249,7 +1249,12 @@
 {
   "ret": 200,
   "data": {
-    "imSdkAppId": "1400086951"
+    "pushCertificateId": 8749,
+    "scanCodeShareSwitch": true,
+    "imSdkAppId": "1400086951",
+    "accountType": 25685,
+    "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
+    "bannerRedirectUrl": "yajinxian"
   }
 }
 ```
@@ -3561,6 +3566,23 @@ expireTime: 545006014
   data: {
     bonusTotal: 100.12，//账户余额
     available: true//为ture表示可提现，false不可提现
+  }
+}
+```
+
+## 扫码激励
+### 扫码进入小程序奖励
+##### 接口:/OperationController/fromQRCODE
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|userId|Long|二维码中嵌套的userId|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {
   }
 }
 ```
