@@ -3644,7 +3644,6 @@ expireTime: 545006014
       (2)字段authenticationStatus  身份验证状态 0未验证 1 验证成功 2 验证失败
       (3)字段status 新增类型 4交易已关闭
     }
-    "failCount":"2"  审核次数
   ]
 }
 ```
@@ -3665,12 +3664,13 @@ expireTime: 545006014
 }
 ```
 
-### 租客签约
-##### 接口:/SignController/lesseeSign
+### 签约
+##### 接口:/SignController/offLineSign
 ##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |contractId|Long|交易id|是|
+|type|int|类型 1租客 2房管员|是|
 ##### 成功返回值
 ```
 {
@@ -3680,8 +3680,8 @@ expireTime: 545006014
 }
 ```
 
-### 房东签约
-##### 接口:/SignController/lesseeSign
+### 查询交易接口
+##### 接口:/SignController/queryContract
 ##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
@@ -3689,8 +3689,12 @@ expireTime: 545006014
 ##### 成功返回值
 ```
 {
-  ret: 200,
-  data: {
-  }
+  "ret": 200,
+  "data": [
+    {
+      "house": "house",房源模型
+      "contract": contract 交易模型
+    }
+  ]
 }
 ```
