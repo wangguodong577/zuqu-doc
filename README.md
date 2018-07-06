@@ -3537,6 +3537,9 @@ expireTime: 545006014
 			"contractType" :1 线上  //1线上 2线下
            	"isHasHouse" : 1   是否有房源 //0无房 1有房
             "authenticationStatus": 1   身份信息验证  0未验证 1 验证成功 2 验证失败
+            "contractTypeStatus" : 1
+            交易状态 数字 0, "签订中"  1, "已签订" 2, "已失效" 3, "已过期"  4, "已关闭"
+            "extend" :20 扩展字字段 页面展示20元金额需要
 		}]
 	}
 }
@@ -3633,6 +3636,9 @@ expireTime: 545006014
 |images|String|图片url逗号分隔|是|
 |listImageUrl|String|展示第一张图片|是|
 |hasToilet|boolean|是否独卫|是|
+|deposit|double|押金|是|
+|address|String|门牌号|是|
+|lesseeMobile|String|门牌号|是|
 
 
 ##### 成功返回值
