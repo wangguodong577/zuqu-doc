@@ -3613,7 +3613,7 @@ expireTime: 545006014
 |startTime|Date|起租日期|是|
 |endTime|Date|终止日期|是|
 |rentPrice|double|月租金|是|
-|payment|int|支付方式|是|
+|payment|String|支付方式|是|
 |certNo|String|出租方身份证号|是|
 |name|String|出租方姓名|是|
 |lesseeCertNo|String|承租方身份证号|是
@@ -3623,8 +3623,8 @@ expireTime: 545006014
 |room|Integer|卧室|是|
 |parlor|Integer|厅|是|
 |toiletCount|Integer|卫生间|是|
-|paymentType|String|支付方式 数字|是|
-|rentType|String|出租类型 数字|是|
+|paymentType|int|支付方式 数字 1押一付一 2押一付三 等等|是|
+|rentType|int|出租类型 数字 1主卧 2次卧"|是|
 |communityId|Long|小区Id|是|
 |areaId|Long|区域ID|是|
 |images|String|图片url逗号分隔|是|
@@ -3638,6 +3638,7 @@ expireTime: 545006014
   "ret": 200,
   "data": [
     {
+      "failType": "1", 1房管员身份信息失败 2租客失败
       "msg": "房管员身份验证失败，请返回修改",
       "contract": contract 返回交易模型  
       (1)字段type 1线上 2线下有房 3线下无房
