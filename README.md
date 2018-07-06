@@ -3534,6 +3534,9 @@ expireTime: 545006014
 			"subwayStationName": "大屯路东 大屯路东 安立路 关庄 森林公园南门 森林公园南门 奥林匹克公园",
 			"contractPlan": false,
 			"isApartment": false
+			"contractType" :1 线上  //1线上 2线下
+           	"isHasHouse" : 1   是否有房源 //0无房 1有房
+            "authenticationStatus": 1   身份信息验证  0未验证 1 验证成功 2 验证失败
 		}]
 	}
 }
@@ -3640,7 +3643,30 @@ expireTime: 545006014
     {
       "failType": "1", 1房管员身份信息失败 2租客失败
       "msg": "房管员身份验证失败，请返回修改",
-      "contract": contract 返回交易模型  
+      "contract": {
+			"id": 6102,
+			"communityName": "新一城",
+			"address": "123",
+			"rentPrice": 2008.0,
+			"deposit": 300.0,
+			"payment": "押一付三",
+			"startTime": 1530144000000,
+			"endTime": 1561593600000,
+			"houseId": 184,
+			"signDate": 1530172388000,
+			"status": 1,
+			"userId": 219,
+			"expireDate": 1530258788000,
+			"lessorPromotionStatus": 0,
+			"lessorBonus": 50.00,
+			"type": 2,
+			"lessorCertNo": "372928198812188529",
+			"lesseeCertNo": "372928198812188528",
+			"lesseeName": "程序",
+			"lessorName": "石总",
+			"lesseeMobile": "18201370436",
+			"authenticationStatus": 1
+		}
       (1)字段type 1线上 2线下有房 3线下无房
       (2)字段authenticationStatus  身份验证状态 0未验证 1 验证成功 2 验证失败
       (3)字段status 新增类型 4交易已关闭
@@ -3665,7 +3691,7 @@ expireTime: 545006014
 }
 ```
 
-### 签约
+### 签约奖励
 ##### 接口:/SignController/offLineSign
 ##### 请求方式:GET
 |参数名|类型|描述|是否必须|
@@ -3690,12 +3716,84 @@ expireTime: 545006014
 ##### 成功返回值
 ```
 {
-  "ret": 200,
-  "data": [
-    {
-      "house": "house",房源模型
-      "contract": contract 交易模型
-    }
-  ]
+	"ret": 200,
+	"data": {
+		"contract": {
+			"id": 6102,
+			"communityName": "新一城",
+			"address": "123",
+			"rentPrice": 2008.0,
+			"deposit": 300.0,
+			"payment": "押一付三",
+			"startTime": 1530144000000,
+			"endTime": 1561593600000,
+			"houseId": 184,
+			"signDate": 1530172388000,
+			"status": 1,
+			"userId": 219,
+			"expireDate": 1530258788000,
+			"lessorPromotionStatus": 0,
+			"lessorBonus": 50.00,
+			"type": 2,
+			"lessorCertNo": "372928198812188529",
+			"lesseeCertNo": "372928198812188528",
+			"lesseeName": "程序",
+			"lessorName": "石总",
+			"lesseeMobile": "18201370436",
+			"authenticationStatus": 0
+		},
+		"house": {
+			"id": 184,
+			"rent": 2000.0,
+			"readyTime": 1529397063205,
+			"room": 1,
+			"parlor": 1,
+			"payment": "5",
+			"rentType": "1",
+			"communityId": 1102850,
+			"buildArea": 63.0,
+			"cityId": 1,
+			"areaId": 1142,
+			"businessAreaId": 1203,
+			"lon": 116.47983,
+			"lat": 39.998999,
+			"listImageUrl": "http://test-1251500528.file.myqcloud.com/hzp/4A1DD90B-4AA7-45B3-958F-AA26600CDAB0.jpg",
+			"status": 4,
+			"createTime": 1529397095050,
+			"nearbySubways": "677835,1101619,243.0;572986,573111,630.0;677835,573111,630.0;677835,1101618,676.0;677835,1101617,1804.0;677835,1101620,1986.0",
+			"userId": 219,
+			"pictureCount": 1,
+			"violationReason": "图片不符合规范",
+			"outTime": 1529896397432,
+			"communityName": "新一城",
+			"areaName": "朝阳",
+			"businessAreaName": "望京",
+			"updateTime": 1530170334642,
+			"ip": "10.141.159.122",
+			"hasWIFI": false,
+			"hasFridge": false,
+			"hasAirConditioning": false,
+			"hasWasher": false,
+			"hasToilet": false,
+			"hasShower": false,
+			"hasHeating": false,
+			"hasGas": false,
+			"hasWardrobe": false,
+			"hasKitchen": false,
+			"hasTV": false,
+			"hasSofa": false,
+			"hasBalcony": false,
+			"hasElevator": false,
+			"hasBed": true,
+			"description": "兔兔陪不补劳斯莱斯劳斯莱斯他她爬起来去了摸我哦",
+			"subwayName": "14号线 15号线 14号线 14号线 14号线 14号线",
+			"signedTime": 1530172388187,
+			"identity": 5,
+			"toiletCount": 1,
+			"subwayStationName": "阜通 望京 望京 望京南 高家园 东湖渠",
+			"contractPlan": false,
+			"isApartment": true
+		}
+	}
 }
 ```
