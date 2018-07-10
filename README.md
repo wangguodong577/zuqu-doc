@@ -3540,6 +3540,7 @@ expireTime: 545006014
             "contractTypeStatus" : 1
             交易状态 数字 0, "签订中"  1, "已签订" 2, "已失效" 3, "已过期"  4, "已关闭"
             "extend" :20 扩展字字段 页面展示20元金额需要
+            "isFailToplimit" :0  身份验证失败上限 //0无 1有
 		}]
 	}
 }
@@ -3719,6 +3720,97 @@ expireTime: 545006014
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |contractId|Long|交易id|是|
+##### 成功返回值
+```
+{
+	"ret": 200,
+	"data": {
+		"contract": {
+			"id": 6102,
+			"communityName": "新一城",
+			"address": "123",
+			"rentPrice": 2008.0,
+			"deposit": 300.0,
+			"payment": "押一付三",
+			"startTime": 1530144000000,
+			"endTime": 1561593600000,
+			"houseId": 184,
+			"signDate": 1530172388000,
+			"status": 1,
+			"userId": 219,
+			"expireDate": 1530258788000,
+			"lessorPromotionStatus": 0,
+			"lessorBonus": 50.00,
+			"type": 2,
+			"lessorCertNo": "372928198812188529",
+			"lesseeCertNo": "372928198812188528",
+			"lesseeName": "程序",
+			"lessorName": "石总",
+			"lesseeMobile": "18201370436",
+			"authenticationStatus": 0
+		},
+		"house": {
+			"id": 184,
+			"rent": 2000.0,
+			"readyTime": 1529397063205,
+			"room": 1,
+			"parlor": 1,
+			"payment": "5",
+			"rentType": "1",
+			"communityId": 1102850,
+			"buildArea": 63.0,
+			"cityId": 1,
+			"areaId": 1142,
+			"businessAreaId": 1203,
+			"lon": 116.47983,
+			"lat": 39.998999,
+			"listImageUrl": "http://test-1251500528.file.myqcloud.com/hzp/4A1DD90B-4AA7-45B3-958F-AA26600CDAB0.jpg",
+			"status": 4,
+			"createTime": 1529397095050,
+			"nearbySubways": "677835,1101619,243.0;572986,573111,630.0;677835,573111,630.0;677835,1101618,676.0;677835,1101617,1804.0;677835,1101620,1986.0",
+			"userId": 219,
+			"pictureCount": 1,
+			"violationReason": "图片不符合规范",
+			"outTime": 1529896397432,
+			"communityName": "新一城",
+			"areaName": "朝阳",
+			"businessAreaName": "望京",
+			"updateTime": 1530170334642,
+			"ip": "10.141.159.122",
+			"hasWIFI": false,
+			"hasFridge": false,
+			"hasAirConditioning": false,
+			"hasWasher": false,
+			"hasToilet": false,
+			"hasShower": false,
+			"hasHeating": false,
+			"hasGas": false,
+			"hasWardrobe": false,
+			"hasKitchen": false,
+			"hasTV": false,
+			"hasSofa": false,
+			"hasBalcony": false,
+			"hasElevator": false,
+			"hasBed": true,
+			"description": "兔兔陪不补劳斯莱斯劳斯莱斯他她爬起来去了摸我哦",
+			"subwayName": "14号线 15号线 14号线 14号线 14号线 14号线",
+			"signedTime": 1530172388187,
+			"identity": 5,
+			"toiletCount": 1,
+			"subwayStationName": "阜通 望京 望京 望京南 高家园 东湖渠",
+			"contractPlan": false,
+			"isApartment": true
+		}
+	}
+}
+```
+
+### 通过房源id查询交易
+##### 接口:/SignController/queryContractByHouseId
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|houseId|Long|房源id|是|
 ##### 成功返回值
 ```
 {
