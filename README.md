@@ -2471,7 +2471,7 @@
 {
   "ret": 200,
   "data": {
-    "houseRequest": {
+    "house": {
       "id": 2,
       "rent": 2345,
       "readyTime": 1513320419764,
@@ -2512,7 +2512,7 @@
       "description": "有花堪折直须折，待到无花空折枝.。。33",
       "isApartment": "true"
     },
-    "conformHouseCount": 0,
+    "conformHouseRequestCount": 0,
     "image": "xxx",
     "reward": true
   }
@@ -2543,19 +2543,25 @@
 {
   "ret": 200,
   "data": {
-    "id": 55,
-    "description": "啦啦啦啦啦",
-    "expectedLocation": "1194 1198",
-    "expectedLocations": "三元桥 三里屯",
-    "expectedAreaNames": "朝阳 朝阳",
-    "expectedTime": 2312312312312312312,
-    "startRent": 2000,
-    "endRent": 20000,
-    "cityId": 1,
-    "status": 2,
-    "createTime": 1513583840900,
-    "userId": 5
+    "houseRequest": {
+        "id": 55,
+        "description": "啦啦啦啦啦",
+        "expectedLocation": "1194 1198",
+        "expectedLocations": "三元桥 三里屯",
+        "expectedAreaNames": "朝阳 朝阳",
+        "expectedTime": 2312312312312312312,
+        "startRent": 2000,
+        "endRent": 20000,
+        "cityId": 1,
+        "status": 2,
+        "createTime": 1513583840900,
+    	"userId": 5
+    },
+    "conformHouseCount": 0,
+    "image": "xxx",
+    "reward": true
   }
+}
 ```
 
 ### 有房详情
