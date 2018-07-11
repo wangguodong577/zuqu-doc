@@ -87,6 +87,20 @@
 ```
 
 ## 交互（社区/评论/动态/通知/点赞/收藏/分享）
+### 输入邀请码
+##### 接口:/UserController/provideInvitationCode
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|invitationCode|String|邀请码|是|
+##### 成功返回值
+```
+{
+	"ret": 200,
+	"data": 0.5//金额大于0给用户提示
+}
+```
+
 ### 点击push消息
 ##### 接口:/UserController/clickPush
 ##### 请求方式:GET
@@ -1646,7 +1660,9 @@
     "apartmentName": "自如公寓",
     apartmentCityId: 1,
     reason: "aaa",
-    "status": 1(0 普通用户没有提交过入驻申请 1 待审核 2 审核通过 3 审核不通过)
+    "status": 1,//(0 普通用户没有提交过入驻申请 1 待审核 2 审核通过 3 审核不通过)
+    "invitationCode": "xxx",
+    "invited": false
   }
 }
 ```
@@ -1700,7 +1716,9 @@
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "sessionKey": "abc"
+    "sessionKey": "abc",
+    "invitationCode": "xxx",
+    "invited": false
   }
 }
 ```
@@ -1802,7 +1820,9 @@
     "apartmentName": "自如公寓",
     apartmentCityId: 1,
     reason: "aaa",
-    "status": 1(0 普通用户没有提交过入驻申请 1 待审核 2 审核通过 3 审核不通过)
+    "status": 1,//(0 普通用户没有提交过入驻申请 1 待审核 2 审核通过 3 审核不通过)
+    "invitationCode": "xxx",
+    "invited": false
   }
 }
 ```
@@ -1852,7 +1872,9 @@
     "personalProfile": "xxx",
     "aliCredit": false,
     "token": "2fAHedgJvxoprJqq63686",
-    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_"
+    "IMSignature": "eJxlj01Pg0AURff8CsK2RocpU6WJi6Y0ijIBLFbDhiDzqC9VGIahHxr-uxWbSOL6nHtv7qdhmqaVBMvzvCjqrtKZPkiwzKlpEevsD0qJIst1NlbiH4S9RAVZXmpQPbQZY5SQoYMCKo0lngxngFqxyfr#####36xzDDJ2xdhQwXUP#####eJx7scehvw5yW8vpEhHJb93JrB-aL2QHlxeNE8c-KD50NXWiXjsryM73OhZAmWsRJpGLyoYwQ2NnUWH3t0uXb16aY3dcv7WzK4Hkxrf4XTGHjOXTcjlgG5BtVhXvUDJUaHEJT#####PjS-jGz5qW-E_",
+    "invitationCode": "xxx",
+    "invited": false
   }
 }
 ```
