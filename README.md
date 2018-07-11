@@ -2514,7 +2514,7 @@
     },
     "conformHouseRequestCount": 0,
     "image": "xxx",
-    "reward": true
+    "reward": 5
   }
 }
 ```
@@ -2559,7 +2559,7 @@
     },
     "conformHouseCount": 0,
     "image": "xxx",
-    "reward": true
+    "reward": 2
   }
 }
 ```
