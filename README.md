@@ -3877,3 +3877,52 @@ expireTime: 545006014
 	}
 }
 ```
+
+### 去赚钱分享页获取分享数据
+##### 接口:/OperationController/shareLink
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		qrcode: "http://www.baidu.com",
+		dynamic: [
+			{
+				name: "空城**",
+				amount: 34
+			},
+			{
+				name: "如梦**",
+				amount: 32
+			},
+			{
+				name: "旧夏天**",
+				amount: 30
+			},
+			{
+				name: "我想要**",
+				amount: 27
+			}
+		],
+		message: "合租趣送百万大礼，现金红包抢不停，当天提现！http://u6.gg/dKveP"
+	}
+}
+```
+### 去赚钱绑定手机号
+##### 接口:/OperationController/bind
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|userId|Long|邀请人ID|是|
+|mobile|String|手机号|是|
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {}
+}
+```
