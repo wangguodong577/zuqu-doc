@@ -4002,15 +4002,15 @@ expireTime: 545006014
       "moneyReceived": 0,
       "available": false
     },
-    "authenticate": true,
-    "publishHouse": false,
-    "viewHouseRequest": true,
-    "publishRequest": true,
-    "forward": true,
-    "inviteCode": true,
-    "sign": true,
-    "invite": true,
-    "viewHouse": true,
+    "authenticate": true,//是否可做实名认证任务
+    "publishHouse": false,//发房源
+    "viewHouseRequest": true,//访问求租
+    "publishRequest": true,//发求租
+    "forward": true,//转发房源
+    "inviteCode": true,//输入邀请码
+    "sign": true,//签约
+    "invite": true,//邀请好友
+    "viewHouse": true,//访问房源
     "user": {
       "id": 13261,
       "nickname": "阿迪",
@@ -4020,7 +4020,7 @@ expireTime: 545006014
       "gender": 1,
       "genderModified": true,
       "mobileNumber": "18201370436",
-      "ageLabel": 2,
+      "ageLabel": 2,//年龄标签，具体规则参考客户端吧。。
       "birthday": "06-29",
       "pushToken": "AoacZWXhZ3cycbV6XjwOIoJAuTXC0YO3PD5Jzj7p7NrS",
       "pf": "android",
