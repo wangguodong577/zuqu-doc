@@ -3926,3 +3926,57 @@ expireTime: 545006014
 	data: {}
 }
 ```
+
+### 身份校验
+##### 接口:/UserController/authentication
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|name|String|姓名|是|
+|certNo	|String|身份证号|是|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: true
+}
+```
+
+### 每日签到
+##### 接口:/ActivityController/everydaySignIn
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|isDouble|boolean|是否加倍|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {
+  }
+}
+```
+
+### 签到信息
+##### 接口:/ActivityController/signInCofig
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		rewardList: [  
+		"0.25",
+		"0.1",
+		"0.1",
+		"0.5",
+		"0.1",
+		"0.25",
+		"0.5"
+		],
+	signInDays: 2   签到第几天
+	}
+}
+```
