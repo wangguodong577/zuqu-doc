@@ -3984,3 +3984,73 @@ expireTime: 545006014
 }
 }
 ```
+
+## 趣赚钱
+### 活动主页接口
+##### 接口:/GoSignH5Controller/makeMoneyInfo
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "wallet": {
+      "id": 1426,
+      "userId": 13261,
+      "bonusTotal": 2.05,
+      "moneyInTransit": 0,
+      "moneyReceived": 0,
+      "available": false
+    },
+    "authenticate": true,
+    "publishHouse": false,
+    "viewHouseRequest": true,
+    "publishRequest": true,
+    "forward": true,
+    "inviteCode": true,
+    "sign": true,
+    "invite": true,
+    "viewHouse": true,
+    "user": {
+      "id": 13261,
+      "nickname": "阿迪",
+      "nicknameModified": true,
+      "avatar": "http://test-1251500528.file.myqcloud.com/hzp/F4F82D6A-61EB-40FF-B43C-BC5C8A91F846.jpg",
+      "avatarModified": true,
+      "gender": 1,
+      "genderModified": true,
+      "mobileNumber": "18201370436",
+      "ageLabel": 2,
+      "birthday": "06-29",
+      "pushToken": "AoacZWXhZ3cycbV6XjwOIoJAuTXC0YO3PD5Jzj7p7NrS",
+      "pf": "android",
+      "career": "电子通讯",
+      "personalProfile": "我去拯救地球了...",
+      "zmScore": 0,
+      "zmAuth": false,
+      "constellation": "巨蟹座",
+      "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+      "zmAuthPushed": false,
+      "infoCompleted": true,
+      "flag": false,
+      "privacy": 0,
+      "forbidden": false,
+      "virtual": false,
+      "subscribe": false,
+      "isForeign": false,
+      "isAdministrators": true,
+      "apartmentName": "链家",
+      "apartmentCityId": 1,
+      "administratorStatus": 2,
+      "verifyTime": 1530272291434,
+      "realName": "石景梅",
+      "certNo": "372928198812188529",
+      "isScanCode": false,
+      "subscribeFwh": false,
+      "invitationCode": "HEZUQU1748771BCD",
+      "invited": false,
+      "authenticationStatus": 0
+    }
+  }
+}
+```
