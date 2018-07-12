@@ -3951,9 +3951,11 @@ expireTime: 545006014
 ##### 成功返回值
 ```
 {
-  ret: 200,
-  data: {
-  }
+	ret: 200,
+	data: {
+		money: 25,
+		signInDays: 1
+	}
 }
 ```
 
@@ -3967,16 +3969,18 @@ expireTime: 545006014
 {
 	ret: 200,
 	data: {
-		rewardList: [  
-		"0.25",
-		"0.1",
-		"0.1",
-		"0.5",
-		"0.1",
-		"0.25",
-		"0.5"
+		rewardList: [
+			"0.25",
+			"0.1",
+			"0.1",
+			"0.5",
+			"0.1",
+			"0.25",
+			"0.5"
 		],
-	signInDays: 2   签到第几天
-	}
+	isSignIn: true,  当日是否签到
+	isDouble: true,  当日是否加倍
+	signInDays: 1   
+}
 }
 ```
