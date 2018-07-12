@@ -4050,7 +4050,17 @@ expireTime: 545006014
       "invitationCode": "HEZUQU1748771BCD",
       "invited": false,
       "authenticationStatus": 0
-    }
+    },
+    "dynamic": [
+      {
+        "name": "空城**",
+        "amount": 34
+      },
+      {
+        "name": "如梦**",
+        "amount": 32
+      }
+    ]
   }
 }
 ```
