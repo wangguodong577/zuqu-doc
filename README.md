@@ -4014,6 +4014,7 @@ expireTime: 545006014
     "sign": true,//签约
     "invite": true,//邀请好友
     "viewHouse": true,//访问房源
+    "rewardCities": [1,2],//签约奖励开放的城市
     "user": {
       "id": 13261,
       "nickname": "阿迪",
