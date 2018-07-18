@@ -3976,7 +3976,7 @@ expireTime: 545006014
 ```
 
 ### 签到信息
-##### 接口:/ActivityController/signInCofig
+##### 接口:/ActivityController/signInConfig
 ##### 请求方式:GET
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
