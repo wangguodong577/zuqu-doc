@@ -2434,6 +2434,7 @@
           "aliCredit": false
         },
         "liked": false
+		redSwitch: true
       }
     ],
     "users": [
