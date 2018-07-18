@@ -2259,7 +2259,7 @@
 }
 ```
 
-##房源&求租
+##房源&出租
 ### 出租列表
 ##### 接口:/chuzu|/chuzu/axxxbxxxcxxxuxxx?page=...
 ##### 请求方式:POST
@@ -2355,6 +2355,7 @@
           "aliCredit": false
         },
         "liked": false
+		redSwitch: true
       }
     ],
     "houseRequestUsers": [
