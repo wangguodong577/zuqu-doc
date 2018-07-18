@@ -1263,12 +1263,21 @@
 {
   "ret": 200,
   "data": {
+    "loginReward": 35,
+    "inviteAlertReward": 26,
     "pushCertificateId": 8749,
-    "scanCodeShareSwitch": true,
-    "imSdkAppId": "1400086951",
+    "publishRequest": 50,
     "accountType": 25685,
+    "invited": 2,
+    "scanCodeShareSwitch": true,
+    "inviteAlertLimit": 10,
+    "inviteAlertUserCount": 3,
+    "bannerRedirectUrl": "yajinxian",
+    "imSdkAppId": "1400086951",
+    "publishHouse": 30,
     "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
-    "bannerRedirectUrl": "yajinxian"
+    "rewardSwitch": true,
+    "authentication": 10
   }
 }
 ```
@@ -2792,8 +2801,9 @@
     ],
     "recommendHouses": [],
     "liked": false,
-    "houseIsContract": false
-    "loginUserIsContract": false
+    "houseIsContract": false,
+    "loginUserIsContract": false,
+    "alterBonus": true
   }
 }
 ```
@@ -2849,7 +2859,8 @@
       "avatar": "null,"
     },
     "nearbyRentFriend": [],
-    "liked": false
+    "liked": false,
+    "alterBonus": true
   }
 }
 ```
