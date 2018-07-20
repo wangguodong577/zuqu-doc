@@ -2039,6 +2039,8 @@
       "closeReason" : "身份信息校验失败2次，交易关闭"
       "promotionStatus" : 0     1 发过钱 2 违规 3 点击已经领取
       "bonus" : 50 奖励金额
+	  "contractType" :2    1线上 2线下有房 3线下无房
+	  "isNew" : true
     },
     {
       "id": 60,
@@ -2055,6 +2057,7 @@
       "createTime": 1513926959165,
       "userId": 9,
       "type": "houseRequest"
+	  "isNew" : true
     }
   ]
 }
