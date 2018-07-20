@@ -2034,6 +2034,11 @@
           day: 0
         }
       ]
+      "contractStatus" :  4   交易订单状态  1已签订 4已关闭
+      "authenticationStatus" : 2   身份验证状态 0未验证 1 验证成功 2 验证失败
+      "closeReason" : "身份信息校验失败2次，交易关闭"
+      "promotionStatus" : 0     1 发过钱 2 违规 3 点击已经领取
+      "bonus" : 50 奖励金额
     },
     {
       "id": 60,
@@ -4079,5 +4084,77 @@ expireTime: 545006014
       }
     ]
   }
+}
+```
+
+### 普通用户线下签约
+##### 接口:/SignController/commonOffOnlineSave
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|houseId|long|签约房源id|是|
+|startTime|Date|起租日期|是|
+|endTime|Date|终止日期|是|
+|rentPrice|double|月租金|是|
+|payment|String|支付方式|是|
+|certNo|String|出租方身份证号|是|
+|name|String|出租方姓名|是|
+|lesseeCertNo|String|承租方身份证号|是
+|lesseeName|String|承租方姓名|是|
+|contractUrl|String|合同照片(url 逗号隔开)|是|
+|id|long|签约合同id 没有传0|是|
+|room|Integer|卧室|是|
+|parlor|Integer|厅|是|
+|toiletCount|Integer|卫生间|是|
+|paymentType|int|支付方式 数字 1押一付一 2押一付三 等等|是|
+|rentType|int|出租类型 数字 1主卧 2次卧"|是|
+|communityId|Long|小区Id|是|
+|areaId|Long|区域ID|是|
+|images|String|图片url逗号分隔|是|
+|listImageUrl|String|展示第一张图片|是|
+|hasToilet|boolean|是否独卫|是|
+|deposit|double|押金|是|
+|address|String|门牌号|是|
+|lesseeMobile|String|求租电话|是|
+|dealPlatform|int|线下交易成交平台  1线下门店 258同城 3豆瓣小组 4其他线下平台|是|
+
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "failType": "1", 1承租方身份信息失败 2租客失败
+      "msg": "身份验证失败，请返回修改",
+      "contract": {
+			"id": 6102,
+			"communityName": "新一城",
+			"address": "123",
+			"rentPrice": 2008.0,
+			"deposit": 300.0,
+			"payment": "押一付三",
+			"startTime": 1530144000000,
+			"endTime": 1561593600000,
+			"houseId": 184,
+			"signDate": 1530172388000,
+			"status": 1,
+			"userId": 219,
+			"expireDate": 1530258788000,
+			"lessorPromotionStatus": 0,
+			"lessorBonus": 50.00,
+			"type": 2,
+			"lessorCertNo": "372928198812188529",
+			"lesseeCertNo": "372928198812188528",
+			"lesseeName": "程序",
+			"lessorName": "石总",
+			"lesseeMobile": "18201370436",
+			"authenticationStatus": 1
+		}
+      (1)字段type 1线上 2线下有房 3线下无房
+      (2)字段authenticationStatus  身份验证状态 0未验证 1 验证成功 2 验证失败
+      (3)字段status 新增类型 4交易已关闭
+    }
+  ]
 }
 ```
