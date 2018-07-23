@@ -4161,3 +4161,15 @@ expireTime: 545006014
   ]
 }
 ```
+
+### 是否能线下交易
+##### 接口:/ActivityController/IsCommonOffOnlineSave
+##### 请求方式:GET
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: true
+}
+```
