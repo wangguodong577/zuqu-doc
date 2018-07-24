@@ -4163,7 +4163,7 @@ expireTime: 545006014
 ```
 
 ### 是否能线下交易
-##### 接口:/ActivityController/IsCommonOffOnlineSave
+##### 接口:/IsCommonOffOnlineSave/IsCommonOffOnlineSave
 ##### 请求方式:GET
 
 ##### 成功返回值
