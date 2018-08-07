@@ -4173,3 +4173,203 @@ expireTime: 545006014
 	data: true
 }
 ```
+### 红包字段介绍(必传的参数要传 同盾的 版本 平台（android 调用 传android iOS 调用传iOS）等 等.)
+```
+红包 summerRedEnvelopes": {
+      "id": 1,
+      "userId": 13434,
+      "createTime": 1533617570975,
+      "count": 5, 红包个数
+      "bonus": 5, 红包总金额
+      "withDrawBonus": 0.43, 被领取的金额
+      "withDrawCount": 4, 被领取红包的个数
+      "type": "_1"
+    }
+
+```
+### 领取奖励
+##### 接口:/OperationController/withDrawRedEnvelopes
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|summerRedEnvelopesId|Long|红包Id|是|
+|mobile|String|手机号|是|
+|code|String|微信授权码|是|
+|smsCode|String|验证码|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "bonus": 0.43,
+    "redEnvelopes": {
+      "id": 1,
+      "userId": 13434,
+      "createTime": 1533617570975,
+      "count": 5,
+      "bonus": 5,
+      "withDrawBonus": 0,
+      "withDrawCount": 3,
+      "type": "_1"
+    },
+    "item": [
+      {
+        "id": 2518,
+        "userId": 15634,
+        "bonus": 0.43,
+        "createTime": 1533624560584,
+        "type": "_11",
+        "summerRedEnvelopesId": 1,
+        "user": {
+          "id": 15634,
+          "nickname": "包Sir大魔王",
+          "nicknameModified": false,
+          "avatar": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIuADne7YZ7I9kymQzJ4mLSh52CuXgO5sPsz39b5x3kOVsZVzTYic6Qh1GNCPD1TUMnAC6f0GJicQnw/132",
+          "avatarModified": false,
+          "gender": 1,
+          "genderModified": false,
+          "mobileNumber": "15321763132",
+          "ageLabel": 0,
+          "openId": "ob2_D02-Djr_6spN4PusrrcbCCYQ",
+          "unionId": "o6EOJ1Yx2RpHwrDEZfykc-6xvimg",
+          "career": "卖艺的",
+          "personalProfile": "我去拯救地球了...",
+          "zmScore": 0,
+          "zmAuth": false,
+          "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+          "zmAuthPushed": false,
+          "infoCompleted": false,
+          "flag": false,
+          "privacy": 0,
+          "forbidden": false,
+          "virtual": false,
+          "subscribe": false,
+          "isForeign": false,
+          "isAdministrators": false,
+          "administratorStatus": 0,
+          "isScanCode": false,
+          "subscribeFwh": false,
+          "invitationCode": "HEZUQU1748772512",
+          "invited": false,
+          "authenticationStatus": 0
+        },
+        "showDate": "刚刚"
+      }
+    ]
+  }
+}
+```
+### 查看可以创建那中类型的红包
+##### 接口:/OperationController/checkSummerRedEnvelopes
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "_1": true,(5元)
+    "_2": true,（10元）
+    "_3": true （20元）
+  }
+}
+
+```
+
+### 分享红包
+##### 接口:/OperationController/shareRedEnvelopes
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|String|红包类型|是|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "link": "http://hzp.caidingke.net/H5/xx/summerRedEnvelopesId=2",
+    "subhead": "你想要冰激凌or大西瓜？",
+    "title": "合租趣消暑红包，快来领取！"
+  }
+}
+
+```
+
+### 红包领取详情
+##### 接口:/OperationController/summerRedEnvelopesDetail
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|String|红包类型|是|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "summerRedEnvelopesItem": [
+      {
+        "id": 2518,
+        "userId": 15634,
+        "bonus": 0.43,
+        "createTime": 1533624560584,
+        "type": "_11",
+        "summerRedEnvelopesId": 1,
+        "user": {
+          "id": 15634,
+          "nickname": "包Sir大魔王",
+          "nicknameModified": false,
+          "avatar": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIuADne7YZ7I9kymQzJ4mLSh52CuXgO5sPsz39b5x3kOVsZVzTYic6Qh1GNCPD1TUMnAC6f0GJicQnw/132",
+          "avatarModified": false,
+          "gender": 1,
+          "genderModified": false,
+          "mobileNumber": "15321763132",
+          "ageLabel": 0,
+          "openId": "ob2_D02-Djr_6spN4PusrrcbCCYQ",
+          "unionId": "o6EOJ1Yx2RpHwrDEZfykc-6xvimg",
+          "career": "卖艺的",
+          "personalProfile": "我去拯救地球了...",
+          "zmScore": 0,
+          "zmAuth": false,
+          "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+          "zmAuthPushed": false,
+          "infoCompleted": false,
+          "flag": false,
+          "privacy": 0,
+          "forbidden": false,
+          "virtual": false,
+          "subscribe": false,
+          "isForeign": false,
+          "isAdministrators": false,
+          "administratorStatus": 0,
+          "isScanCode": false,
+          "subscribeFwh": false,
+          "invitationCode": "HEZUQU1748772512",
+          "invited": false,
+          "authenticationStatus": 0
+        },
+        "showDate": "48分钟前"
+      }
+    ],
+    "summerRedEnvelopes": {
+      "id": 1,
+      "userId": 13434,
+      "createTime": 1533617570975,
+      "count": 5,
+      "bonus": 5,
+      "withDrawBonus": 0.43,
+      "withDrawCount": 4,
+      "type": "_1"
+    }
+  }
+}
+
+```
+
