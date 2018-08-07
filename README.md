@@ -1278,6 +1278,7 @@
     "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
     "rewardSwitch": true,
     "authentication": 10
+    "summerRedEnvelopes" : true
   }
 }
 ```
