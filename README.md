@@ -4378,3 +4378,68 @@ expireTime: 545006014
 
 ```
 
+### 根据红包ID查看红包领取详情
+##### 接口:/OperationController/findSummerRedEnvelopesItemBySummerRedEnvelopesId
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|summerRedEnvelopesId|Long|红包ID|是|
+
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "id": 2518,
+      "userId": 15634,
+      "bonus": 0.43,
+      "createTime": 1533624560584,
+      "type": "_11",
+      "summerRedEnvelopesId": 1,
+      "user": {
+        "id": 15634,
+        "nickname": "包Sir大魔",
+        "nicknameModified": true,
+        "avatar": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIuADne7YZ7I9kymQzJ4mLSh52CuXgO5sPsz39b5x3kOVsZVzTYic6Qh1GNCPD1TUMnAC6f0GJicQnw/132",
+        "avatarModified": false,
+        "gender": 1,
+        "genderModified": false,
+        "mobileNumber": "15321763132",
+        "ageLabel": 1,
+        "birthday": "08-07",
+        "openId": "ob2_D02-Djr_6spN4PusrrcbCCYQ",
+        "unionId": "o6EOJ1Yx2RpHwrDEZfykc-6xvimg",
+        "pf": "android",
+        "career": "经营管理",
+        "personalProfile": "我去拯救地球了...",
+        "zmScore": 0,
+        "zmAuth": false,
+        "constellation": "狮子座",
+        "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+        "zmAuthPushed": false,
+        "infoCompleted": true,
+        "flag": false,
+        "privacy": 0,
+        "forbidden": false,
+        "virtual": false,
+        "subscribe": false,
+        "isForeign": false,
+        "isAdministrators": false,
+        "administratorStatus": 0,
+        "isScanCode": false,
+        "subscribeFwh": false,
+        "invitationCode": "HEZUQU1748772512",
+        "invited": false,
+        "authenticationStatus": 0
+      },
+      "showDate": "08-07"
+    }
+  ]
+}
+
+```
+
+
+
