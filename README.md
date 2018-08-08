@@ -4195,7 +4195,11 @@ expireTime: 545006014
 |---|---|---|---|
 |summerRedEnvelopesId|Long|红包Id|是|
 |mobile|String|手机号|是|
-|code|String|微信授权码|是|
+|unionId|String|unionid|是|
+|nickname|String|nickname|是|
+|headimgurl|String|headimgurl|是|
+|sex|Integer|sex|是|
+|openId|String|openId|是|
 |smsCode|String|验证码|是|
 
 ##### 成功返回值
