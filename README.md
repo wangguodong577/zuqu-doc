@@ -4441,5 +4441,32 @@ expireTime: 545006014
 
 ```
 
+### 红包二次分享
+##### 接口:/OperationController/secondTimeShare
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|summerRedEnvelopesId|Long|红包ID|是|
+
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "wechatConfig": {
+      "signature": "0a106f07919e324bf20a4e35b835b34e3a758d40",
+      "appId": "wx5f8525c2230c4872",
+      "jsapi_ticket": "HoagFKDcsGMVCIY2vOjf9jZqMWLKIwyTPafcjrcPlrY4p46FxSTbTiTPE3ZFaIv27bTh3tXex1QfP2mTq7cCYg",
+      "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5f8525c2230c4872&redirect_uri=https%3A%2F%2Fhzpwechat-test.baihejia.com%2FGoSignH5Controller%2FsummerGetTel%3FsummerRedEnvelopesId%3D1&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect",
+      "nonceStr": "4e354e2d-8171-4526-822f-6abcd6bd972f",
+      "timestamp": "1533715998"
+    },
+    "subhead": "你想要冰激凌or大西瓜？",
+    "title": "合租趣消暑红包，快来领取！"
+  }
+}
+
+```
 
 
