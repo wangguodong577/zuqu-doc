@@ -4481,4 +4481,154 @@ expireTime: 545006014
 
 ```
 
+### 获取公寓接口
+##### 接口:/ApartmentController/getApartment
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|name|String|公寓名称|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "items": [
+      {
+        "id": 11004,
+        "name": "测试",
+        "brand": "测试",
+        "createTime": 1533548865321,
+        "status": 1,
+        "bankId": 2,
+        "bankName": "农业银行",
+        "accountName": "王国栋",
+        "accountNo": "12123454343",
+        "total": 0
+      }
+    ],
+    "count": 1,
+    "showCount": 1,
+    "extraItems": []
+  }
+}
+
+```
+
+### 入驻接口
+##### 接口:/UserController/administratorProfileAndAuthentication
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|apartmentName|String|公寓名称|是|
+| cityId |Long|城市id|是|
+| apartmentId |Long|公寓ID|是|
+| brand |String|公寓品牌|是|
+| realName |String|姓名|是|
+| certNo |String|身份证号|是|
+|avatar|String|头像|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 555574,
+    "nickname": "果果",
+    "nicknameModified": false,
+    "avatarModified": false,
+    "gender": 3,
+    "genderModified": false,
+    "mobileNumber": "15278099621",
+    "ageLabel": 0,
+    "openId": "o_lBJ1BnpXu_97tXkm6ZLlkKVybc",
+    "unionId": "o6EOJ1cKdnLKRM33cqJpuXUA0dY0",
+    "pf": "android",
+    "career": "吉祥物",
+    "personalProfile": "我去拯救地球了...",
+    "zmScore": 0,
+    "zmAuth": false,
+    "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+    "zmAuthPushed": false,
+    "infoCompleted": false,
+    "flag": false,
+    "privacy": 0,
+    "forbidden": false,
+    "virtual": false,
+    "subscribe": false,
+    "isForeign": false,
+    "isAdministrators": false,
+    "apartmentName": "自如公寓",
+    "apartmentCityId": 1,
+    "administratorStatus": 1,
+    "isScanCode": false,
+    "subscribeFwh": false,
+    "invitationCode": "HEZUQU17487F6236",
+    "invited": false,
+    "apartmentId": 1,
+    "brand": "自如",
+    "isFacePerception": false,
+    "authenticationStatus": 0
+  }
+}
+
+```
+
+### 人脸认证成功接口
+##### 接口:/UserController/facePerception
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 555574,
+    "nickname": "果果",
+    "nicknameModified": false,
+    "avatarModified": false,
+    "gender": 3,
+    "genderModified": false,
+    "mobileNumber": "15278099621",
+    "ageLabel": 0,
+    "openId": "o_lBJ1BnpXu_97tXkm6ZLlkKVybc",
+    "unionId": "o6EOJ1cKdnLKRM33cqJpuXUA0dY0",
+    "pf": "android",
+    "career": "吉祥物",
+    "personalProfile": "我去拯救地球了...",
+    "zmScore": 0,
+    "zmAuth": false,
+    "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+    "zmAuthPushed": false,
+    "infoCompleted": false,
+    "flag": false,
+    "privacy": 0,
+    "forbidden": false,
+    "virtual": false,
+    "subscribe": false,
+    "isForeign": false,
+    "isAdministrators": false,
+    "apartmentName": "自如公寓",
+    "apartmentCityId": 1,
+    "administratorStatus": 1,
+    "isScanCode": false,
+    "subscribeFwh": false,
+    "invitationCode": "HEZUQU17487F6236",
+    "invited": false,
+    "apartmentId": 1,
+    "brand": "自如",
+    "isFacePerception": true,
+    "authenticationStatus": 0
+  }
+}
+
+```
+
+
+
+
 
