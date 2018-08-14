@@ -4858,6 +4858,29 @@ expireTime: 545006014
 }
 
 ```
+### 获取银行列表
+##### 接口:/ApartmentController/findApartmentByUserId
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 2,
+    "name": "自如管家公司",
+    "brand": "自如管家",
+    "url": "http://test-1251500528.file.myqcloud.com/hzp4db10eb7-dda9-453b-9e83-221d56445c0a.jpg",
+    "createTime": 1534233073804,
+    "status": 0,
+    "requestUserId": 555648
+  }
+}
+
+```
 
 
 
