@@ -4628,6 +4628,243 @@ expireTime: 545006014
 
 ```
 
+### 房源和电话点击量统计
+##### 接口:/ApartmentController/clickStatistics
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|start|Long|开始时间|否|
+|end|Long|结束时间|否|
+|type|String|类型 PHONE HOUSE|是|
+
+
+##### 成功返回值
+```
+不传时间：
+{
+  "ret": 200,
+  "data": {
+    "yesterdayClick": 0,
+    "todayClickAvg": 0,
+    "todayClick": 0,
+    "yesterdayClickAvg": 0
+  }
+}
+
+传时间：
+{
+  "ret": 200,
+  "data": {
+    "clickAvg": 0,
+    "click": 0
+  }
+}
+
+```
+
+### 房源量统计
+##### 接口:/ApartmentController/houseStatistics
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|start|Long|开始时间|否|
+|end|Long|结束时间|否|
+
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "showHouse": 0,
+    "business": 0,
+    "publish": 0
+  }
+}
+
+```
+### 交易量统计
+##### 接口:/ApartmentController/businessStatistics
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|start|Long|开始时间|否|
+|end|Long|结束时间|否|
+
+
+##### 成功返回值
+```
+不传时间：
+{
+  "ret": 200,
+  "data": {
+    "todaySigning": 0,
+    "yesterdayOffline": 0,
+    "yesterdayOnline": 0,
+    "todayOnline": 0,
+    "todayOffline": 0,
+    "yesterdaySigning": 0
+  }
+}
+
+传时间：
+{
+  "ret": 200,
+  "data": {
+    "offline": 0,
+    "online": 0,
+    "signing": 0
+  }
+}
+
+```
+
+### 点击电话
+##### 接口:/ApartmentController/clickPhone
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|userId|Long|被点击电话的userId|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 公司账号
+##### 接口:/ApartmentController/companyAccount
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 公司申请
+##### 接口:/ApartmentController/apartmentApply
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|name|String|公司名称|是|
+|brand|String|公司品牌|是|
+|url|String|营业执照|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 绑定提现账号（更新）
+##### 接口:/UserController/accountBank
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+|bankId|Long|银行ID|是|
+|bankName|String|银行名称|是|
+|cardNo|String|卡号|是|
+|mobile|String|手机号|是|
+|code|String|验证码|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 555574,
+    "nickname": "果果",
+    "nicknameModified": false,
+    "avatarModified": false,
+    "gender": 3,
+    "genderModified": false,
+    "mobileNumber": "15278099621",
+    "ageLabel": 0,
+    "openId": "o_lBJ1BnpXu_97tXkm6ZLlkKVybc",
+    "unionId": "o6EOJ1cKdnLKRM33cqJpuXUA0dY0",
+    "pf": "android",
+    "career": "吉祥物",
+    "personalProfile": "我去拯救地球了...",
+    "zmScore": 0,
+    "zmAuth": false,
+    "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+    "zmAuthPushed": false,
+    "infoCompleted": false,
+    "flag": false,
+    "privacy": 0,
+    "forbidden": false,
+    "virtual": false,
+    "subscribe": false,
+    "isForeign": false,
+    "isAdministrators": false,
+    "apartmentName": "自如公寓",
+    "apartmentCityId": 1,
+    "administratorStatus": 1,
+    "isScanCode": false,
+    "subscribeFwh": false,
+    "invitationCode": "HEZUQU17487F6236",
+    "invited": false,
+    "apartmentId": 1,
+    "brand": "自如",
+    "isFacePerception": true,
+    "authenticationStatus": 0,
+    "bankId": 1,
+    "bankName" : "招商银行",
+    "bankCardNo" : "123456",
+    "source": 2
+  }
+}
+```
+
+### 获取银行列表
+##### 接口:/ProfileController/bank
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|token|String|token|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "id": 1,
+      "name": "招商银行"
+    },
+    {
+      "id": 2,
+      "name": "农业银行"
+    }
+  ]
+}
+
+```
+
+
+
+
+
+
+
 
 
 
