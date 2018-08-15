@@ -4882,11 +4882,531 @@ expireTime: 545006014
 
 ```
 
+### 房源列表 (B端)
+##### 接口:/SignController/houseList
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|0展示房源 上架  1已签约 2已下架|是|
+##### 成功返回值
+```
+type为 0和2的返回值
+{
+	ret: 200,
+	data: {
+		list: [{
+				id: 31097,
+				rent: 3688,
+				readyTime: 1534176000000,
+				room: 1,
+				parlor: 1,
+				payment: "2",
+				rentType: "1",
+				communityId: 1085892,
+				buildArea: 56,
+				cityId: 1,
+				areaId: 1141,
+				businessAreaId: 5842,
+				lon: 116.340519,
+				lat: 39.893557,
+				listImageUrl: "http://test-1251500528.file.myqcloud.com/hzp0682d912-3926-4160-a3ab-bf31a4f6850a.jpg",
+				status: 1,
+				createTime: 1534228804429,
+				nearbySubways: "1101595,1101597,253.0;1101595,1101596,540.0;1101595,634627,1341.0;634618,634627,1341.0;634618,634626,1705.0",
+				userId: 555583,
+				pictureCount: 3,
+				communityName: "马连道北街小区",
+				areaName: "宣武",
+				businessAreaName: "马连道",
+				updateTime: 1534228804429,
+				ip: "106.39.84.154",
+				hasWIFI: false,
+				hasFridge: false,
+				hasAirConditioning: false,
+				hasWasher: true,
+				hasToilet: false,
+				hasShower: true,
+				hasHeating: false,
+				hasGas: false,
+				hasWardrobe: false,
+				hasKitchen: false,
+				hasTV: false,
+				hasSofa: false,
+				hasBalcony: true,
+				hasElevator: false,
+				hasBed: true,
+				description: "明明你哦你狗狗狗狗狗狗狗ing明明哦明明哦轰轰轰",
+				subwayName: "7号线 7号线 7号线 9号线 9号线",
+				identity: 5,
+				toiletCount: 1,
+				subwayStationName: "达官营 湾子 北京西站 北京西站 六里桥东",
+				contractPlan: false,
+				isApartment: true,
+				lessorBonus: 100,
+				extend: 20
+			}
+		]
+	}
+}
+type为1 的返回值
 
+{
+	ret: 200,
+	data: {
+		list: [{
+			id: 6329,
+			communityName: "白纸坊桥",
+			address: "门萨排比唉",
+			rentPrice: 2589,
+			deposit: 2685,
+			payment: "押一付一",
+			startTime: 1534262400000,
+			endTime: 1565712000000,
+			lessor: {
+				id: 6415,
+				userId: 555583,
+				name: "张振东",
+				certNo: "410782199206254736",
+				mobile: "18401657466",
+				type: "LESSOR",
+				contractId: 6329,
+				gender: 3
+			},
+			lessee: {
+				id: 6414,
+				userId: 13365,
+				name: "付森",
+				certNo: "131182199203043416",
+				mobile: "13021021262",
+				type: "LESSEE",
+				contractId: 6329,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzpd94b0855-4bf8-49c6-ba2a-2666b6edaa32.jpg",
+				gender: 2,
+				nickname: "包子"
+			},
+			status: "已签订",
+			isDeposit: false,
+			url: "http://hzp.caidingke.net/sign/detail?id=6329&pf=WEB&cityId=1&ver=null",
+			effectDate: 1534651200166,
+			expiredDate: 1566100800166,
+			amount: 2685,
+			premium: 0.01,
+			premiumOri: 299,
+			supplement: "",
+			overdue: 1534389918000,
+			house: {
+				id: 31036,
+				rent: 699,
+				readyTime: 1534176000000,
+				room: 1,
+				parlor: 1,
+				payment: "2",
+				rentType: "1",
+				communityId: 1085882,
+				buildArea: 500,
+				cityId: 1,
+				areaId: 1141,
+				businessAreaId: 5835,
+				lon: 116.355769,
+				lat: 39.883297,
+				listImageUrl: "http://test-1251500528.file.myqcloud.com/hzpcb005ae6-3675-4c93-9266-2184191722d1.jpg",
+				status: 4,
+				createTime: 1534216719236,
+				nearbySubways: "1101595,1101598,1555.0;1101595,1101597,1895.0",
+				userId: 555583,
+				pictureCount: 3,
+				communityName: "白纸坊桥",
+				areaName: "宣武",
+				businessAreaName: "白纸坊",
+				updateTime: 1534216719236,
+				ip: "106.39.84.154",
+				hasWIFI: false,
+				hasFridge: false,
+				hasAirConditioning: false,
+				hasWasher: true,
+				hasToilet: false,
+				hasShower: false,
+				hasHeating: false,
+				hasGas: false,
+				hasWardrobe: true,
+				hasKitchen: false,
+				hasTV: false,
+				hasSofa: false,
+				hasBalcony: true,
+				hasElevator: false,
+				hasBed: true,
+				description: "446464644466464646468756464664",
+				subwayName: "7号线 7号线",
+				signedTime: 1534303683219,
+				identity: 5,
+				toiletCount: 1,
+				subwayStationName: "广安门内 达官营",
+				contractPlan: false,
+				isApartment: false
+			},
+			lessorUser: {
+				id: 555583,
+				nickname: "P53392",
+				nicknameModified: false,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzp17276f12-6413-449f-8897-d9b3396f1187.jpg",
+				avatarModified: false,
+				gender: 3,
+				genderModified: false,
+				mobileNumber: "18401657466",
+				ageLabel: 0,
+				pushToken: "AneAA6239h7SuXbOQW_iouV7plSYiDMaApfggmy7l5mb",
+				pf: "android",
+				career: "小宝贝",
+				personalProfile: "我去拯救地球了...",
+				zmScore: 0,
+				zmAuth: false,
+				background: "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+				zmAuthPushed: false,
+				infoCompleted: false,
+				flag: false,
+				privacy: 0,
+				forbidden: false,
+				virtual: false,
+				subscribe: false,
+				isForeign: false,
+				isAdministrators: true,
+				apartmentName: "租趣科技有限公司",
+				apartmentCityId: 1,
+				administratorStatus: 2,
+				realName: "张振东",
+				certNo: "410782199206254736",
+				isScanCode: false,
+				subscribeFwh: false,
+				invitationCode: "HEZUQU17487F623F",
+				invited: false,
+				apartmentId: 1,
+				brand: "租趣公寓",
+				isFacePerception: true,
+				authenticationStatus: 1,
+				source: 2
+			},
+			lesseeUser: {
+				id: 13365,
+				nickname: "包子",
+				nicknameModified: true,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzpd94b0855-4bf8-49c6-ba2a-2666b6edaa32.jpg",
+				avatarModified: true,
+				gender: 2,
+				genderModified: true,
+				mobileNumber: "13021021262",
+				ageLabel: 5,
+				birthday: "07-31",
+				pushToken: "Aoi23MV2l6kBT27z4CoBmiCz4xnMkDtrCibYhVFJsOQY",
+				pf: "android",
+				career: "法律",
+				personalProfile: "我去拯救地球了...",
+				zmScore: 0,
+				zmAuth: false,
+				constellation: "狮子座",
+				background: "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+				zmAuthPushed: false,
+				infoCompleted: true,
+				flag: false,
+				privacy: 0,
+				forbidden: false,
+				virtual: false,
+				subscribe: false,
+				isForeign: false,
+				isAdministrators: false,
+				administratorStatus: 0,
+				realName: "石景梅",
+				certNo: "372928198812188529",
+				isScanCode: false,
+				subscribeFwh: false,
+				invitationCode: "HEZUQU1748771C35",
+				invited: false,
+				isFacePerception: false,
+				authenticationStatus: 1
+			},
+			lessorPromotionStatus: 0,
+			lessorBonus: 100,
+			contractType: 1,
+			isHasHouse: 1,
+			authenticationStatus: 0,
+			contractTypeStatus: 1,
+			extend: "20",
+			isFailToplimit: 0,
+			showContractType: 1,
+			rent: 2589,
+			total: 5178,
+			signMonth: 1,
+			payStatus: 0,
+			payWay: 0,
+			isNotice: false
+		}]
+	}
+}
 
+```
 
+### 交易列表 (B端)
+##### 接口:/SignController/contractList
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|0线上签约 1线下签约  2签订中|是|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		list: [{
+			id: 6329,
+			communityName: "白纸坊桥",
+			address: "门萨排比唉",
+			rentPrice: 2589,
+			deposit: 2685,
+			payment: "押一付一",
+			startTime: 1534262400000,
+			endTime: 1565712000000,
+			lessor: {
+				id: 6415,
+				userId: 555583,
+				name: "张振东",
+				certNo: "410782199206254736",
+				mobile: "18401657466",
+				type: "LESSOR",
+				contractId: 6329,
+				gender: 3
+			},
+			lessee: {
+				id: 6414,
+				userId: 13365,
+				name: "付森",
+				certNo: "131182199203043416",
+				mobile: "13021021262",
+				type: "LESSEE",
+				contractId: 6329,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzpd94b0855-4bf8-49c6-ba2a-2666b6edaa32.jpg",
+				gender: 2,
+				nickname: "包子"
+			},
+			status: "已签订",
+			isDeposit: false,
+			url: "http://hzp.caidingke.net/sign/detail?id=6329&pf=WEB&cityId=1&ver=null",
+			effectDate: 1534651200166,
+			expiredDate: 1566100800166,
+			amount: 2685,
+			premium: 0.01,
+			premiumOri: 299,
+			supplement: "",
+			overdue: 1534389918000,
+			house: {
+				id: 31036,
+				rent: 699,
+				readyTime: 1534176000000,
+				room: 1,
+				parlor: 1,
+				payment: "2",
+				rentType: "1",
+				communityId: 1085882,
+				buildArea: 500,
+				cityId: 1,
+				areaId: 1141,
+				businessAreaId: 5835,
+				lon: 116.355769,
+				lat: 39.883297,
+				listImageUrl: "http://test-1251500528.file.myqcloud.com/hzpcb005ae6-3675-4c93-9266-2184191722d1.jpg",
+				status: 4,
+				createTime: 1534216719236,
+				nearbySubways: "1101595,1101598,1555.0;1101595,1101597,1895.0",
+				userId: 555583,
+				pictureCount: 3,
+				communityName: "白纸坊桥",
+				areaName: "宣武",
+				businessAreaName: "白纸坊",
+				updateTime: 1534216719236,
+				ip: "106.39.84.154",
+				hasWIFI: false,
+				hasFridge: false,
+				hasAirConditioning: false,
+				hasWasher: true,
+				hasToilet: false,
+				hasShower: false,
+				hasHeating: false,
+				hasGas: false,
+				hasWardrobe: true,
+				hasKitchen: false,
+				hasTV: false,
+				hasSofa: false,
+				hasBalcony: true,
+				hasElevator: false,
+				hasBed: true,
+				description: "446464644466464646468756464664",
+				subwayName: "7号线 7号线",
+				signedTime: 1534303683219,
+				identity: 5,
+				toiletCount: 1,
+				subwayStationName: "广安门内 达官营",
+				contractPlan: false,
+				isApartment: false
+			},
+			lessorUser: {
+				id: 555583,
+				nickname: "P53392",
+				nicknameModified: false,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzp17276f12-6413-449f-8897-d9b3396f1187.jpg",
+				avatarModified: false,
+				gender: 3,
+				genderModified: false,
+				mobileNumber: "18401657466",
+				ageLabel: 0,
+				pushToken: "AneAA6239h7SuXbOQW_iouV7plSYiDMaApfggmy7l5mb",
+				pf: "android",
+				career: "小宝贝",
+				personalProfile: "我去拯救地球了...",
+				zmScore: 0,
+				zmAuth: false,
+				background: "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+				zmAuthPushed: false,
+				infoCompleted: false,
+				flag: false,
+				privacy: 0,
+				forbidden: false,
+				virtual: false,
+				subscribe: false,
+				isForeign: false,
+				isAdministrators: true,
+				apartmentName: "租趣科技有限公司",
+				apartmentCityId: 1,
+				administratorStatus: 2,
+				realName: "张振东",
+				certNo: "410782199206254736",
+				isScanCode: false,
+				subscribeFwh: false,
+				invitationCode: "HEZUQU17487F623F",
+				invited: false,
+				apartmentId: 1,
+				brand: "租趣公寓",
+				isFacePerception: true,
+				authenticationStatus: 1,
+				source: 2
+			},
+			lesseeUser: {
+				id: 13365,
+				nickname: "包子",
+				nicknameModified: true,
+				avatar: "http://test-1251500528.file.myqcloud.com/hzpd94b0855-4bf8-49c6-ba2a-2666b6edaa32.jpg",
+				avatarModified: true,
+				gender: 2,
+				genderModified: true,
+				mobileNumber: "13021021262",
+				ageLabel: 5,
+				birthday: "07-31",
+				pushToken: "Aoi23MV2l6kBT27z4CoBmiCz4xnMkDtrCibYhVFJsOQY",
+				pf: "android",
+				career: "法律",
+				personalProfile: "我去拯救地球了...",
+				zmScore: 0,
+				zmAuth: false,
+				constellation: "狮子座",
+				background: "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+				zmAuthPushed: false,
+				infoCompleted: true,
+				flag: false,
+				privacy: 0,
+				forbidden: false,
+				virtual: false,
+				subscribe: false,
+				isForeign: false,
+				isAdministrators: false,
+				administratorStatus: 0,
+				realName: "石景梅",
+				certNo: "372928198812188529",
+				isScanCode: false,
+				subscribeFwh: false,
+				invitationCode: "HEZUQU1748771C35",
+				invited: false,
+				isFacePerception: false,
+				authenticationStatus: 1
+			},
+			lessorPromotionStatus: 0,
+			lessorBonus: 100,
+			contractType: 1,
+			isHasHouse: 1,
+			authenticationStatus: 0,
+			contractTypeStatus: 1,
+			extend: "20",
+			isFailToplimit: 0,
+			showContractType: 1,
+			rent: 2589,
+			total: 5178,
+			signMonth: 1,
+			payStatus: 0,
+			payWay: 0,
+			isNotice: false
+		}]
+	}
+}
 
+```
 
+### 租金打折
+##### 接口:/SignController/rentDiscount
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|id|long|交易id|是|
+|rent|double|打折之后租金|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 交易拒绝接口
+##### 接口:/SignController/refuseSign
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|id|long|交易id|是|
+|reason|String|拒绝原因|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 获取用户未读push消息 
+##### 接口:/UserController/getUnreadPush
+##### 请求方式:POST
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		count: 0, 到账通知未读信息数量
+		unicast: null, 租户匹配未读信息最新
+		matchUnicast: { 到账通知未读信息最新
+			id: 54,
+			userId: 555583,
+			title: "合租派",
+			text: "(T＿T)您发布的求租信息因图片不符合规范，未通过审核，现在前往修改可立即发布喔！",
+			pushTime: 1522229524625,
+			goType: "matching",
+			status: 0,
+			itemId: 0
+			houseRequests ：
+		},
+		matchCount: 1 租户匹配未读信息数量
+	}
+}
+
+```
 
 
 
