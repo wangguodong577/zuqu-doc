@@ -5416,6 +5416,22 @@ type为1 的返回值
 
 ```
 
+### banner
+##### 接口:/Application/administratorsBanners
+##### 请求方式:GET
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
+      "bannerRedirectUrl": "yajinxian"
+    }
+  ]
+}
+```
 ### push消息已读接口
 ##### 接口:/UserController/readPush
 ##### 请求方式:POST
@@ -5502,7 +5518,6 @@ type为1 的返回值
 		}
 	}
 }
-
 ```
 
 ### 发送求合租 成功
