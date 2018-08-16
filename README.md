@@ -5408,7 +5408,22 @@ type为1 的返回值
 
 ```
 
+### banner
+##### 接口:/Application/administratorsBanners
+##### 请求方式:GET
 
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
+      "bannerRedirectUrl": "yajinxian"
+    }
+  ]
+}
+```
 
 
 
