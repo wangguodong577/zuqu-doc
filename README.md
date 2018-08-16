@@ -5408,7 +5408,6 @@ type为1 的返回值
 			pushTime: 1522229524625,
 			goType: "rent",
 			status: 0,
-			houseRequestIds ：
 			unReadCount  ：1  未读信息数量
 		}
 	}
@@ -5563,6 +5562,9 @@ type为1 的返回值
 		money: 0,
 		avatars: [
 			"http://test-1251500528.file.myqcloud.com/hzp/060d1555d20b62bfbd3b73e38670814945"
+		],
+        gender: [
+			1
 		]
 	}]
 }
