@@ -5407,6 +5407,7 @@ type为1 的返回值
 			text: "(T＿T)您发布的求租信息因图片不符合规范，未通过审核，现在前往修改可立即发布喔！",
 			pushTime: 1522229524625,
 			goType: "rent",
+            type : 1 1租金 2奖励
 			status: 0,
 			unReadCount  ：1  未读信息数量
 		}
@@ -5539,7 +5540,7 @@ type为1 的返回值
 ##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
-|goType|String|push类型|是|
+|goType|String|push类型 matching 租户匹配 account 到账通知|是|
 |page|int|当前页数|是|	
 |pageSize|int|每页数据|是|	
 ##### 成功返回值
@@ -5560,6 +5561,7 @@ type为1 的返回值
 		contractId: 0,
 		senderId: 0,
 		money: 0,
+        type:0,
 		avatars: [
 			"http://test-1251500528.file.myqcloud.com/hzp/060d1555d20b62bfbd3b73e38670814945"
 		],
