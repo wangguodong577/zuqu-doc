@@ -5389,9 +5389,7 @@ type为1 的返回值
 {
 	ret: 200,
 	data: {
-		count: 0, 到账通知未读信息数量
-		unicast: null, 租户匹配未读信息最新
-		matchUnicast: { 到账通知未读信息最新
+		matchUnicast: { 匹配通知未读信息最新
 			id: 54,
 			userId: 555583,
 			title: "合租派",
@@ -5399,10 +5397,20 @@ type为1 的返回值
 			pushTime: 1522229524625,
 			goType: "matching",
 			status: 0,
-			itemId: 0
-			houseRequests ：
-		},
-		matchCount: 1 租户匹配未读信息数量
+			houseRequestIds ：12,34
+			unReadCount  ：1  未读信息数量
+		}，
+		accountUnicast: { 到账通知未读信息最新
+			id: 53,
+			userId: 555583,
+			title: "合租派",
+			text: "(T＿T)您发布的求租信息因图片不符合规范，未通过审核，现在前往修改可立即发布喔！",
+			pushTime: 1522229524625,
+			goType: "rent",
+			status: 0,
+			houseRequestIds ：
+			unReadCount  ：1  未读信息数量
+		}
 	}
 }
 
@@ -5497,15 +5505,12 @@ type为1 的返回值
 
 ```
 
-### 获取
-##### 接口:/UserController/getPushList
+### 发送求合租 成功
+##### 接口:/UserController/recommendSuccess
 ##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |ids|String|用户ids 逗号隔开|是|
-|page|int|当前页数|是|	
-|pageSize|int|每页数据|是|	
-
 ##### 成功返回值
 ```
 {
@@ -5521,12 +5526,30 @@ type为1 的返回值
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |goType|String|push类型|是|
-
+|page|int|当前页数|是|	
+|pageSize|int|每页数据|是|	
 ##### 成功返回值
 ```
 {
-  "ret": 200,
-  "data": {}
+	ret: 200,
+	data: [{
+		id: 54,
+		userId: 555741,
+		title: "合租派",
+		text: "(T＿T)您发布的求租信息因图片不符合规范，未通过审核，现在前往修改可立即发布喔！",
+		pushTime: 1522229524625,
+		goType: "matching",
+		status: 0,
+		houseRequestIds: "51",
+		houseId: 0,
+		orderId: 0,
+		contractId: 0,
+		senderId: 0,
+		money: 0,
+		avatars: [
+			"http://test-1251500528.file.myqcloud.com/hzp/060d1555d20b62bfbd3b73e38670814945"
+		]
+	}]
 }
 
 ```
