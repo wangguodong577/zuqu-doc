@@ -5408,7 +5408,202 @@ type为1 的返回值
 
 ```
 
+### push消息已读接口
+##### 接口:/UserController/readPush
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|goType|String|push类型|是|
 
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
 
+```
 
+### 是否可以发送求合租 
+##### 接口:/UserController/checkRecommend
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|ids|String|用户ids 逗号隔开|是|
+|houseId|long|房源id|是|	
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		msg: "只可以推荐2次哦",
+		ids: [
+			1,
+			2
+		],
+		house: {
+			id: 71,
+			rent: 6900,
+			readyTime: 1,
+			room: 3,
+			parlor: 1,
+			payment: "2",
+			rentType: "1",
+			communityId: 270,
+			buildArea: 138,
+			cityId: 1,
+			areaId: 1142,
+			businessAreaId: 11367,
+			lon: 116.569578,
+			lat: 39.911007,
+			listImageUrl: "http://test-1251500528.file.myqcloud.com/hzp/47727F61-22B3-4D64-ACEF-FCC5FA343373.jpg",
+			status: 2,
+			createTime: 1525942570645,
+			nearbySubways: "236715,236833,841.0;236715,236834,1294.0",
+			userId: 155,
+			pictureCount: 1,
+			violationReason: "",
+			outTime: 1525942592683,
+			communityName: "艺水芳园",
+			areaName: "朝阳",
+			businessAreaName: "双桥",
+			updateTime: 1525942595244,
+			ip: "10.141.159.122",
+			hasWIFI: false,
+			hasFridge: false,
+			hasAirConditioning: false,
+			hasWasher: false,
+			hasToilet: false,
+			hasShower: false,
+			hasHeating: false,
+			hasGas: false,
+			hasWardrobe: false,
+			hasKitchen: false,
+			hasTV: false,
+			hasSofa: false,
+			hasBalcony: false,
+			hasElevator: false,
+			hasBed: true,
+			description: "哈哈哈萨拉了垮了肉木木木木木木不了肉木木木木木木木木哦阿塔帕肉木木木木木木阿塔帕哈哈 set 多头父母呃拉萨怕热透福福福福福福福",
+			subwayName: "八通线 八通线",
+			identity: 1,
+			toiletCount: 1,
+			subwayStationName: "传媒大学 双桥",
+			contractPlan: false,
+			isApartment: false
+		}
+	}
+}
+
+```
+
+### 获取
+##### 接口:/UserController/getPushList
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|ids|String|用户ids 逗号隔开|是|
+|page|int|当前页数|是|	
+|pageSize|int|每页数据|是|	
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 获取push列表
+##### 接口:/UserController/getPushList
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|goType|String|push类型|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
+
+### 根据ids获取求租列表
+##### 接口:/HouseRequestController/getHouseRequestByIds
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|ids|String|用户ids 逗号隔开|是|
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: [{
+		id: 51,
+		description: "哈哈哈应该是没有问题了，违规后再次发房源哦哦哦哦哦哦看了看自己",
+		expectedLocation: "1206 5994 16082 6828",
+		expectedLocations: "酒仙桥 奥林匹克公园 学院路北 亚运村小营",
+		expectedAreas: "1142 1142 1143 1142",
+		expectedAreaNames: "朝阳 朝阳 海淀 朝阳",
+		expectedTime: 1,
+		startRent: 100,
+		endRent: 5100,
+		cityId: 1,
+		status: 2,
+		createTime: 1525935304993,
+		userId: 147,
+		violationReason: "",
+		outTime: 1528790850744,
+		updateTime: 1528797727487,
+		pictureCount: 1,
+		listImageUrl: "http://test-1251500528.file.myqcloud.com/hzp/8ae947190f64a41cd69a1732f79f985145",
+		expectedSubwayStationId: "",
+		expectedSubwayId: "",
+		user: {
+			id: 147,
+			nickname: "西瓜的人都就",
+			nicknameModified: true,
+			avatar: "http://test-1251500528.file.myqcloud.com/hzp/060d1555d20b62bfbd3b73e38670814945",
+			avatarModified: true,
+			gender: 1,
+			genderModified: true,
+			mobileNumber: "17611265966",
+			ageLabel: 5,
+			birthday: "12-01",
+			openId: "ob2_D06cjM68I9ofCUP1Afo5-syI",
+			unionId: "",
+			pf: "WEB",
+			career: "房地产",
+			favorite: "美食,旅游",
+			personalProfile: "没有签名才个性。咯路",
+			zmScore: 0,
+			zmAuth: false,
+			constellation: "射手座",
+			background: "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+			zmAuthPushed: true,
+			infoCompleted: true,
+			flag: false,
+			privacy: 1,
+			forbidden: false,
+			virtual: false,
+			mpOpenId: "oOKCt4piIMT0cRzKWk-IbpS-ucSQ",
+			subscribe: true,
+			isForeign: false,
+			isAdministrators: false,
+			administratorStatus: 0,
+			isScanCode: true,
+			subscribeFwh: false,
+			invitationCode: "HEZUQU174876E893",
+			invited: true,
+			isFacePerception: false,
+			authenticationStatus: 0
+		}
+	}]
+}
+
+```
 
