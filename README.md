@@ -5567,7 +5567,13 @@ type为1 的返回值
 		],
         gender: [
 			1
-		]
+		],
+        communityName : 小西,
+        picUrl : http://prod-1251500528.file.myqcloud.com/resource/money_source_1.png,
+        url : http://hzp.caidingke.net/ApartmentH5Controller/apartmentBillInfor?orderId=52;
+		tips : 租金1255元
+        send  : 付款方：xiaxoa
+        receive : 收款账户:个人账户
 	}]
 }
 
@@ -5648,4 +5654,18 @@ type为1 的返回值
 }
 
 ```
+### 短信通知租户 线上支付
+##### 接口:/SignController/notifyPay
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|id|long|合同id|是|
 
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+
+```
