@@ -5669,3 +5669,27 @@ type为1 的返回值
 }
 
 ```
+
+### B端升级
+##### 接口:/ProfileController/bVersion
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|String|IOS,ANDROID|是|
+
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 3,
+    "type": "IOS",
+    "forceUpgrade": false,
+    "downloadPath","",
+    "forceUpgrade","",
+    "tips","",
+    "version",""
+  }
+}
+
+```
