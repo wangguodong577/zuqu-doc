@@ -3494,15 +3494,15 @@ expireTime: 545006014
 {
   "ret": 200,
   "data": {
-    "startTime": 1534953600000,
-    "endTime": 1566403200000,
+    "startTime": 1534953600000,//开始时间
+    "endTime": 1566403200000,//结束时间
     "list": [
       {
-        "rentCount": 6,
-        "shouldPayDate": 1534953600000,
-        "depositCount": 1,
-        "startTime": 1534953600000,
-        "endTime": 1550764800000,
+        "rentCount": 6,//月租X
+        "shouldPayDate": 1534953600000,X前支付
+        "depositCount": 1,//押金X
+        "startTime": 1534953600000,期间
+        "endTime": 1550764800000,期间
         "status": "未支付"
       },
       {
