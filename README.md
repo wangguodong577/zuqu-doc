@@ -3503,7 +3503,9 @@ expireTime: 545006014
         "depositCount": 1,//押金X
         "startTime": 1534953600000,期间
         "endTime": 1550764800000,期间
-        "status": "未支付"
+        "status": "未支付",
+        "statusValue": "_0",//_2已支付
+        "paymentTime": null,
       },
       {
         "rentCount": 6,
@@ -3511,7 +3513,9 @@ expireTime: 545006014
         "depositCount": 0,
         "startTime": 1550851200000,
         "endTime": 1566403200000,
-        "status": "未支付"
+        "status": "未支付",
+        "statusValue": "_0",//_2已支付
+        "paymentTime": null,
       }
     ]
   }
