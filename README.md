@@ -3468,6 +3468,55 @@ expireTime: 545006014
 }
 ```
 
+### 选择线上或者线下
+##### 接口:/SignController/paymentMode
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|contractId|long|签约id|是|
+|mode|int|1-线上，2-线下|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {}
+}
+```
+
+### 租金历史记录接口
+##### 接口:/SignController/contractPaymentList
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|contractId|long|签约id|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "startTime": 1534953600000,
+    "endTime": 1566403200000,
+    "list": [
+      {
+        "rentCount": 6,
+        "shouldPayDate": 1534953600000,
+        "depositCount": 1,
+        "startTime": 1534953600000,
+        "endTime": 1550764800000,
+        "status": "未支付"
+      },
+      {
+        "rentCount": 6,
+        "shouldPayDate": 1550851200000,
+        "depositCount": 0,
+        "startTime": 1550851200000,
+        "endTime": 1566403200000,
+        "status": "未支付"
+      }
+    ]
+  }
+}
+```
 
 ## 其他
 ### 生成海报
