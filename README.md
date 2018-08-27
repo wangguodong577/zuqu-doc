@@ -3522,6 +3522,34 @@ expireTime: 545006014
 }
 ```
 
+### 绑定微信接口
+##### 接口:/OperationController/bindWechat
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|code|String|code|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {}
+}
+```
+
+### 公寓提现接口
+##### 接口:/OperationController/gongyuWithdraw
+##### 请求方式:POST
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|image|String|image|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {}
+}
+```
+
 ## 其他
 ### 生成海报
 ##### 接口:/ActivityController/getPoster
