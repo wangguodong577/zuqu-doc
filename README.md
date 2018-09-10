@@ -2297,7 +2297,7 @@
 |j|+数字|出租类型(1:整租 2:合租)|否|
 |k|+数字|居室(开间 9)|否|
 |isAdministrators|int|房屋来源(1个人 2公寓)|否|
-
+|forMiss|boolean|女性专区传true|是|
 成功返回值
 ```
 {
@@ -2407,6 +2407,7 @@
 |startPublishTime|long|最小发布时间的时间戳|否|
 |endPublishTime|long|最大发布时间的时间戳|否|
 |keywords|String|关键字|否|
+|forMiss|boolean|女性专区传true|是|
 成功返回值
 ```
 {
