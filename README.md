@@ -2508,6 +2508,7 @@
 |identity|int|1 我是房东 2 我要转租 3 我要合租|否|
 |toiletCount|int|厕所个数|否|
 |contractPlan|boolean|是否参与去签约计划|否|
+|forMiss|boolean|true-仅展示给女性，false-不限，当前用户为女性是必传|否|
 ##### 成功返回值
 ```
 {
@@ -2579,7 +2580,7 @@
 |code|String|验证码|是|
 |expectedSubwayStationId|String|期望地铁站 空格隔开|否|
 |expectedSubwayId|String|对应地铁站的地铁线ID 空格隔开|否|
-
+|forMiss|boolean|true-仅展示给女性，false-不限，当前用户为女性是必传|否|
 ##### 成功返回值
 ```
 {
