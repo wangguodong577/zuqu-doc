@@ -4050,6 +4050,21 @@ expireTime: 545006014
 }
 ```
 
+### 女性专区身份校验
+##### 接口:/UserController/missAuth
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|name|String|姓名|是|
+|certNo	|String|身份证号|是|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: true
+}
+```
+
 ### 每日签到
 ##### 接口:/ActivityController/everydaySignIn
 ##### 请求方式:GET
