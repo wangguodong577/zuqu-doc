@@ -5803,7 +5803,6 @@ type为1 的返回值
 |communityId|Long|小区id|是|
 |address|String|地址|是|
 |planTime|Long|看房时间|是|
-|contact|String|联系方式|是|
 ##### 成功返回值
 ```
 {
