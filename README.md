@@ -5791,3 +5791,104 @@ type为1 的返回值
 }
 
 ```
+
+## 女性专区
+### 创建陪同看房并返回支付签名
+##### 接口:/Miss/escort
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|String|COME-来看房，GO-去看房|是|
+|communityId|Long|小区id|是|
+|address|String|地址|是|
+|planTime|Long|看房时间|是|
+|contact|String|联系方式|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "returnCode": "SUCCESS",
+    "returnMsg": "OK",
+    "appId": "wxa91cf5dabed99eec",
+    "mchId": "1496204652",
+    "nonceStr": "PfUXChQHCFESciJaTIXhgJgfZgSiYGNI",
+    "sign": "BCA6F4CB54C8D5FD75A201558F0BABB6",
+    "resultCode": "SUCCESS",
+    "serviceId": 4,//陪同看房id
+    "tradeType": "APP",
+    "prepayId": "wx11125806279955d259cb0da80199546316",
+    "packageValue": "Sign=WXPay",
+    "timestamp": "1536641886"
+  }
+}
+```
+
+### 创建陪同详情
+##### 接口:/Miss/escortDetail
+##### 请求方式:GET
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|id|Long|/Miss/escort返回的serviceId|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 3,
+    "type": "COME",//COME-来看房，GO-去看房
+    "createTime": 1536637048905,//创建时间
+    "communityId": 13,
+    "communityName": "远洋山水北区",
+    "address": "address",
+    "planTime": 0,//看房时间
+    "contact": "18514030307",//联系方式
+    "orderId": 411,
+    "userId": 555993,
+    "escortAmount": 0.01//押金金额
+  }
+}
+```
+
+### 创建陪同详情
+##### 接口:/Miss/escortList
+##### 请求方式:GET
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|page|Integer|page,从1开始|是|
+|pageSize|Integer|pageSize，默认20|否|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "id": 3,
+      "type": "COME",//COME-来看房，GO-去看房
+      "createTime": 1536637048905,
+      "communityId": 13,
+      "communityName": "远洋山水北区",
+      "address": "address",
+      "planTime": 0,//看房时间
+      "contact": "18514030307",//联系方式
+      "orderId": 411,
+      "userId": 555993
+    },
+    {
+      "id": 2,
+      "type": "COME",
+      "createTime": 1536636980126,
+      "communityId": 13,
+      "communityName": "远洋山水北区",
+      "address": "address",
+      "planTime": 0,
+      "contact": "18514030307",
+      "orderId": 410,
+      "userId": 555993
+    }
+  ]
+}
+```
