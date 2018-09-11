@@ -5847,6 +5847,8 @@ type为1 的返回值
     "contact": "18514030307",//联系方式
     "orderId": 411,
     "userId": 555993,
+    "status": "ONGOING",//ONGOING为等待看房，FINISHED未看房结束
+    "depositStatus": "RETURNED",//status=ONGOING时有值，RETURNED-归还押金，NOT_RETURNED-不归还
     "escortAmount": 0.01//押金金额
   }
 }
@@ -5875,6 +5877,8 @@ type为1 的返回值
       "planTime": 0,//看房时间
       "contact": "18514030307",//联系方式
       "orderId": 411,
+      "status": "ONGOING",//ONGOING为等待看房，FINISHED未看房结束
+    "depositStatus": "RETURNED",//status=ONGOING时有值，RETURNED-归还押金，NOT_RETURNED-不归还
       "userId": 555993
     },
     {
@@ -5887,6 +5891,8 @@ type为1 的返回值
       "planTime": 0,
       "contact": "18514030307",
       "orderId": 410,
+      "status": "ONGOING",//ONGOING为等待看房，FINISHED未看房结束
+      "depositStatus": "RETURNED",//status=ONGOING时有值，RETURNED-归还押金，NOT_RETURNED-不归还
       "userId": 555993
     }
   ]
