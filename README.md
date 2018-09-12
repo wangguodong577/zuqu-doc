@@ -5899,13 +5899,16 @@ type为1 的返回值
 }
 ```
 
-### 是否可以认证
-##### 接口:/UserController/missAuthAvailable
+### 认证状态
+##### 接口:/UserController/missAuthStatus
 ##### 请求方式:GET
 ##### 成功返回值
 ```
 {
   "ret": 200,
-  "data": false//true可以认证，false不可以认证
+  "data": {
+    "authenticated": true,//true已认证，false未认证
+    "canAuth": false//true可以认证，false不可以认证
+  }
 }
 ```
