@@ -5849,7 +5849,8 @@ type为1 的返回值
     "status": "ONGOING",//ONGOING为等待看房，FINISHED为看房结束
     "depositStatus": "RETURNED",//status=FINISHED时有值，RETURNED-归还押金，NOT_RETURNED-不归还
     "reason": "xxxx",//不退押金的时候有值
-    "escortAmount": 0.01//押金金额
+    "escortAmount": 0.01,//押金金额
+    "orderStatus": "_2"//_0-未支付，_1-已提交第三方，_2-支付成功
   }
 }
 ```
