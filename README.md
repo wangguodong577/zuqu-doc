@@ -1672,7 +1672,13 @@
     reason: "aaa",
     "status": 1,//(0 普通用户没有提交过入驻申请 1 待审核 2 审核通过 3 审核不通过)
     "invitationCode": "xxx",
-    "invited": false
+    "invited": false,
+    "userProvincesId":1,
+    "userProvincesName":"河北省",
+    "userCityId":1,
+    "userCityName":"张家口市",
+    "schoolId":1
+    "schoolName":"d"
   }
 }
 ```
@@ -2510,6 +2516,14 @@
 |toiletCount|int|厕所个数|否|
 |contractPlan|boolean|是否参与去签约计划|否|
 |forMiss|boolean|true-仅展示给女性，false-不限，当前用户为女性是必传|否|
+|requirement|String|出租需求|否|
+|userProvincesId|Long|家乡省ID|否|
+|userProvincesName|String|家乡省名称|否|
+|userCityId|Long|家乡城市Id|否|
+|userCityName|Long|家乡城市名称|否|
+|schoolId|Long|学校Id|否|
+|schoolName|String|学校名称|否|
+
 ##### 成功返回值
 ```
 {
@@ -2582,6 +2596,13 @@
 |expectedSubwayStationId|String|期望地铁站 空格隔开|否|
 |expectedSubwayId|String|对应地铁站的地铁线ID 空格隔开|否|
 |forMiss|boolean|true-仅展示给女性，false-不限，当前用户为女性是必传|否|
+|requirement|String|出租需求|否|
+|userProvincesId|Long|家乡省ID|否|
+|userProvincesName|String|家乡省名称|否|
+|userCityId|Long|家乡城市Id|否|
+|userCityName|Long|家乡城市名称|否|
+|schoolId|Long|学校Id|否|
+|schoolName|String|学校名称|否|
 ##### 成功返回值
 ```
 {
