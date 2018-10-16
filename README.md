@@ -1,3 +1,5 @@
+签约之前提示
+
 ## 通用参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
@@ -12047,3 +12049,91 @@ type为1 的返回值
 }
 ```
 
+### 小程序左滑操作
+##### 接口:/NeedReplenishController/leftSlip
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|类型 1出租 2求租|是|
+|id|long|房源id或者求租id|是|
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		numKey: "hzp_NEEDREPLENISH_NUM_HOUSE_102",
+		isPopup: true,   是否弹出框
+		tip: "现在对您的推荐匹配度为69%",
+		step: "_2",
+		isFinish: false   是否已经补充完整 
+	}
+}
+```
+
+### 小程序左滑操作
+##### 接口:/NeedReplenishController/rightSlip
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|类型 1出租 2求租|是|
+|id|long|房源id或者求租id|是|
+|formId|String|小程序formId|是|
+
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		numKey: "hzp_NEEDREPLENISH_NUM_HOUSE_102",
+		isPopup: true,   是否弹出框
+		tip: "现在对您的推荐匹配度为69%",
+		step: "_2",
+		isFinish: false   是否已经补充完整 
+	}
+}
+```
+
+### 保存补充信息
+##### 接口:/NeedReplenishController/save
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|类型 1出租 2求租|是|
+|room|int|房间|是|
+|parlor|int|客厅|是|
+|toiletCount|int|厕所|是|
+|payment|String|付款方式|是|
+|rentType|String|出租方式|是|
+##### 成功返回值
+```
+{
+  ret: 200,
+  data: {
+  }
+}
+```
+
+### 查询用户的补充信息
+##### 接口:/NeedReplenishController/findByUserId
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|type|int|类型 1出租 2求租|是|是|
+##### 成功返回值
+```
+{
+	ret: 200,
+	data: {
+		id: 38,
+		type: 1,
+		userId: 102,
+		createTime: 1539669457766,
+		updateTime: 1539675947002,
+		hasToilet: false,
+		requirement: "“不带异性过夜”"
+	}
+}
+```
