@@ -12036,7 +12036,12 @@ type为1 的返回值
         "bannerPictureUrl": "http://prod-1251500528.file.myqcloud.com/resource/biyeji-banner.jpg",
         "bannerRedirectUrl": "yajinxian"
       }
-    ]
+    ],
+    subheads: [
+        "22套精选整租房源",
+        "已有29人满意入住",
+        "312人已领取"
+	]
   }
 }
 ```
