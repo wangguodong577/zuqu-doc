@@ -4637,18 +4637,18 @@ expireTime: 545006014
 ```
 
 ### 入驻接口
-##### 接口:/UserController/administratorProfileAndAuthentication
+##### 接口:/UserController/administratorApply
 ##### 请求方式:POST
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
-|token|String|token|是|
-|apartmentName|String|公寓名称|是|
-| cityId |Long|城市id|是|
-| apartmentId |Long|公寓ID|是|
-| brand |String|公寓品牌|是|
-| realName |String|姓名|是|
-| certNo |String|身份证号|是|
+|apartmentId|Long|公寓ID|否|
+|apartmentName|String|公寓名称|否|
+|brand|String|品牌名称|否|
+|url|String|公司营业执照url|否|
+|cityId|Long|城市id|是|
 |avatar|String|头像|是|
+|realName|String|姓名|是|
+|certNo|String|身份证号|是|
 
 ##### 成功返回值
 ```
