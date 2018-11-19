@@ -45,6 +45,8 @@
 |80004| "调用微信接口失败"|
 |80005| "无法获取预支付交易会话标识"|
 |80006| "订单不存在"|
+|10102| "无效的code"|
+|10103| "等待app扫码..."|
 
 ## 搜索
 ### 模糊搜索关键词列表
@@ -12137,3 +12139,36 @@ type为1 的返回值
 	}
 }
 ```
+
+### 房管家pc端，生成app授权二维码接口
+##### 接口:/Application/generateAdministratorLoginQrcode
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "code": "0aneT6h9f4n85HdND0dY960uc4cB9W64785e813a68Bwu6f05c62e1m472Pc5",
+    "qrCode": "http://test-1251500528.file.myqcloud.com/hzp/15426051306535b5dd3684cfa4484bb5f01f43c3fa026.jpg"
+  }
+}
+```
+
+### 房管家app授权pc端登录接口
+##### 接口:/Application/authorize
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+```
+
+### 房管家pc端查询app是否授权完成
+##### 接口:/Application/authorized
+##### 请求方式:GET
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|code|字符串|code|是|
+##### 返回结果与登录接口完全一致
