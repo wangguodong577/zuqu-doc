@@ -12191,6 +12191,6 @@ type为1 的返回值
 ```
 {
   "ret": 200,
-  "data": {}
+  "data": "http://test-1251500528.file.myqcloud.com/hzp/house/xxx.png"
 }
 ```
