@@ -12194,3 +12194,17 @@ type为1 的返回值
   "data": "http://test-1251500528.file.myqcloud.com/hzp/house/xxx.png"
 }
 ```
+
+### 房管家房源数据统计
+##### 接口:/UserController/houseStatistic
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "thisMonthCount": 1,
+    "onlineCount": 0
+  }
+}
+```
