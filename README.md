@@ -12236,3 +12236,72 @@ png格式图片
   "data": {}
 }
 ```
+
+### 绑定手机号校验接口
+##### 接口:/UserController/bindCheck
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|mobileNumber|字符串|手机号码|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "code": 2,
+    "msg": "检测到该手机号码已注册过合租趣账号，是否需要进行账号合并操作？",
+    "options": [
+      {
+        "accountId": 556375,
+        "description": "18514030307"
+      },
+      {
+        "accountId": 556392,
+        "description": "昵称为趣@小新的微信账号"
+      }
+    ]
+  }
+}
+```
+```
+{
+  "ret": 200,
+  "data": {
+    "code": 1
+  }
+}
+```
+
+### 绑定手机号码
+##### 接口:/UserController/bindMobileNew
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|mobileNumber|String|手机号码|是|
+|code|String|验证码|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": true
+}
+```
+
+### 账号合并
+##### 接口:/UserController/mergeAccount
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|mobileNumber|String|手机号码|是|
+|accountId|数字|/UserController/bindCheck接口返回的accountId|是|
+|code|String|验证码|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+```
