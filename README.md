@@ -12248,28 +12248,7 @@ png格式图片
 ```
 {
   "ret": 200,
-  "data": {
-    "code": 2,
-    "msg": "检测到该手机号码已注册过合租趣账号，是否需要进行账号合并操作？",
-    "options": [
-      {
-        "accountId": 556375,
-        "description": "18514030307"
-      },
-      {
-        "accountId": 556392,
-        "description": "昵称为趣@小新的微信账号"
-      }
-    ]
-  }
-}
-```
-```
-{
-  "ret": 200,
-  "data": {
-    "code": 1
-  }
+  "data": {}
 }
 ```
 
@@ -12296,8 +12275,8 @@ png格式图片
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
 |mobileNumber|String|手机号码|是|
-|accountId|数字|/UserController/bindCheck接口返回的accountId|是|
 |code|String|验证码|是|
+|wechatMessage|json|客户端缓存的消息|是|
 ##### 成功返回值
 ```
 {
