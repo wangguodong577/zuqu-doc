@@ -12284,3 +12284,21 @@ png格式图片
   "data": {}
 }
 ```
+
+### 填写或更新愿望单接口
+##### 接口:/HouseRequestController/expect
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|expectedBusinessAreaIds|String|商圈id，如7211,6876|否|
+|expectedCommunityIds|String|小区id，如2076571,1084664|否|
+|startRent|数字|租金min|否|
+|endRent|数字|租金max|否|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {}
+}
+```
