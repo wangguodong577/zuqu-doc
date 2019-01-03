@@ -12326,3 +12326,26 @@ png格式图片
   }
 }
 ```
+
+### 查询是否需要弹出愿望单填写页面
+##### 接口:/HouseRequestController/alertExpectation
+##### 请求方式:GET
+##### 接口参数
+无
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "businessArea": {
+      "isNew": false,
+      "id": 1203,
+      "cityId": 1,
+      "areaId": 1142,
+      "name": "望京",
+      "pinyin": "wangjing",
+      "new": false
+    }
+  }
+}
+```
