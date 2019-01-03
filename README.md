@@ -12297,6 +12297,7 @@ png格式图片
 |endRent|数字|租金max|否|
 |mobileNumber|String|手机号码|否|
 |code|String|验证码|否|
+|privacy|数字|隐私保护，0-关闭，1-开启|是|
 ##### 成功返回值
 ```
 {
