@@ -12302,3 +12302,27 @@ png格式图片
   "data": {}
 }
 ```
+
+### 查询愿望单接口
+##### 接口:/HouseRequestController/getExpectation
+##### 请求方式:GET
+##### 接口参数
+无
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "id": 5,
+    "expectedBusinessAreaIds": "7211",
+    "expectedBusinessAreaNames": "广益",
+    "expectedCommunityIds": "2076571",
+    "expectedCommunityNames": "龙城花园W区",
+    "startRent": 1000,
+    "endRent": 20000,
+    "cityId": 1,
+    "userId": 556485,
+    "expectTime": 1546498240483
+  }
+}
+```
