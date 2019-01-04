@@ -12319,6 +12319,8 @@ png格式图片
     "id": 5,
     "expectedBusinessAreaIds": "7211",
     "expectedBusinessAreaNames": "广益",
+    "expectedAreaIds": "111 222",
+    "expectedAreaNames": "xxx sss",
     "expectedCommunityIds": "2076571",
     "expectedCommunityNames": "龙城花园W区",
     "startRent": 1000,
