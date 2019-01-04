@@ -12350,6 +12350,16 @@ png格式图片
       "name": "望京",
       "pinyin": "wangjing",
       "new": false
+    },
+    "area": {
+      "id": 1138,
+      "cityId": 1,
+      "name": "东城",
+      "sort": 0,
+      "setId": true,
+      "setCityId": true,
+      "setName": true,
+      "setSort": true
     }
   }
 }
