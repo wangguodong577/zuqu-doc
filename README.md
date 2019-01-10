@@ -12416,6 +12416,7 @@ png格式图片
           "requestUserAgeLabel": 5,
           "requestUserCareer": "设计",
           "requestUserAvatar", "xxx",
+          "requestUserGender": 1,
           "requestId": 38,
           "similar": 0.965
         }
