@@ -12414,6 +12414,7 @@ png格式图片
           "requestUserNickname": "铛铛",
           "requestUserAgeLabel": 5,
           "requestUserCareer": "设计",
+          "requestUserAvatar", "xxx",
           "requestId": 38,
           "similar": 0.965
         }
