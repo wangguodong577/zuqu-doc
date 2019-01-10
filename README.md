@@ -12380,3 +12380,142 @@ png格式图片
   "data": {}
 }
 ```
+
+### 匹配记录
+##### 接口:/Match/deliveries
+##### 请求方式:GET
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|page|数字|>=1|是|
+|pageSize|数字|>=1|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "id": 610,
+      "deliveryTime": 1547026800076,
+      "houseId": 31600,
+      "houseUserId": 556262,
+      "communityId": 8312,
+      "communityName": "海德堡花园",
+      "itemCount": 1,
+      "price": 30,
+      "items": [
+        {
+          "id": 694,
+          "deliveryTime": 1547026800076,
+          "houseId": 31600,
+          "houseUserId": 556262,
+          "price": 30,
+          "requestUserId": 556473,
+          "requestUserNickname": "铛铛",
+          "requestUserAgeLabel": 5,
+          "requestUserCareer": "设计",
+          "requestId": 38,
+          "similar": 0.965
+        }
+      ],
+      "status": "_0",//_0未支付，_99已过期，_2支付成功
+      "desc": "根据您发布的“海德堡花园”的房源，找到1位优质租客"
+    }
+  ]
+}
+```
+
+### 生成支付签名
+##### 接口:/Match/generateOrder
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|requestDeliveryId|数字|匹配id|是|
+|mpOpenId|字符串|用户openId，小程序必传|否|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": {
+    "returnCode": "SUCCESS",
+    "returnMsg": "OK",
+    "appId": "wxa91cf5dabed99eec",
+    "mchId": "1496204652",
+    "nonceStr": "LTNggbEiXeiaBddCTgAcOJVhHGibhNXR",
+    "sign": "E8633F2A6C29D87301614F7A6DF728CD",
+    "resultCode": "SUCCESS",
+    "serviceId": 610,
+    "tradeType": "APP",
+    "prepayId": "wx0918325138469659755a24c03933272591",
+    "packageValue": "Sign=WXPay",
+    "timestamp": "1547029971"
+  }
+}
+```
+
+### 匹配详情
+##### 接口:/Match/detail
+##### 请求方式:GET
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|requestDeliveryId|数字|匹配id|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "expectedTime": 1545321600000,
+      "price": "6000-8000元",
+      "description": "喜欢唱歌，喜欢拍电影1424242434242424243434272",
+      "locations": "昌平北七家",
+      "requirement": "要干净,不养宠物,不带异性过夜,不吸烟,仅限一人,作息正常,好相处,工作稳定",
+      "user": {
+        "id": 556473,
+        "nickname": "铛铛",
+        "nicknameModified": true,
+        "avatar": "http://test-1251500528.file.myqcloud.com/hzp1c959f75-e3d9-4097-95a7-5c70a7b23777.jpg",
+        "avatarModified": true,
+        "gender": 1,
+        "genderModified": true,
+        "mobileNumber": "15993832961",
+        "ageLabel": 5,
+        "birthday": "07-07",
+        "pf": "WEB",
+        "career": "设计",
+        "personalProfile": "我去拯救地球了...",
+        "zmScore": 0,
+        "zmAuth": false,
+        "constellation": "巨蟹座",
+        "background": "http://test-1251500528.file.myqcloud.com/hzp/img/default_background.jpg",
+        "zmAuthPushed": false,
+        "infoCompleted": true,
+        "flag": false,
+        "privacy": 1,
+        "forbidden": false,
+        "virtual": false,
+        "mpOpenId": "oOKCt4nHUJ8epdijXk0-Czx9Hklw",
+        "subscribe": false,
+        "isForeign": false,
+        "isAdministrators": false,
+        "administratorStatus": 0,
+        "realName": "郭新霞",
+        "certNo": "410521199007168022",
+        "isScanCode": false,
+        "subscribeFwh": false,
+        "invitationCode": "HEZUQU17487F65B9",
+        "invited": false,
+        "authenticationStatus": 1,
+        "migrate": 0,
+        "isLogin": true,
+        "userProvincesName": "吉林",
+        "userCityName": "通化"
+      },
+      "communities": "望京国际商业中心",
+      "home": "吉林-通化"
+    }
+  ]
+}
+```
