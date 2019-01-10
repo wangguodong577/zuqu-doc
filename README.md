@@ -12396,8 +12396,8 @@ png格式图片
   "data": [
     {
       "id": 610,
-      "deliveryTime": 1547026800076,
-      "deadline":1547178187108,
+      "deliveryTime": 1547026800076,//匹配时间
+      "deadline":1547178187108,//过期时间
       "houseId": 31600,
       "houseUserId": 556262,
       "communityId": 8312,
