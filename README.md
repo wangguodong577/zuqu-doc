@@ -12594,3 +12594,140 @@ png格式图片
   ]
 }
 ```
+
+### 匹配详情
+##### 接口:/Match/orders
+##### 请求方式:GET
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "id": 1150,
+      "deliveryTime": 1547362260150,
+      "houseId": 31686,
+      "houseUserId": 556532,
+      "communityId": 8576,
+      "communityName": "土桥新村",
+      "itemCount": 1,
+      "price": 20,
+      "zuquOderId": 563,
+      "items": [
+        {
+          "id": 1215,
+          "deliveryTime": 1547362260150,
+          "houseId": 31686,
+          "houseUserId": 556532,
+          "price": 20,
+          "requestUserId": 556507,
+          "requestUserNickname": "hahah",
+          "requestUserAgeLabel": 3,
+          "requestUserCareer": "行政管理",
+          "requestUserAvatar": "http://test-1251500528.file.myqcloud.com/hzpf188993c-e0c0-4731-82b3-1edded257125.jpg",
+          "requestUserGender": 1,
+          "requestId": 45,
+          "similar": 0.995
+        }
+      ],
+      "status": "_2",
+      "keywords": "通州土桥、不限",
+      "deadline": 1547448660150,
+      "desc": "根据您发布的“土桥新村”的房源，找到1位优质租客"
+    },
+    {
+      "id": 1089,
+      "deliveryTime": 1547102882606,
+      "houseId": 31686,
+      "houseUserId": 556532,
+      "communityId": 8576,
+      "communityName": "土桥新村",
+      "itemCount": 1,
+      "price": 25,
+      "items": [
+        {
+          "id": 1159,
+          "deliveryTime": 1547102882606,
+          "houseId": 31686,
+          "houseUserId": 556532,
+          "price": 25,
+          "requestUserId": 556507,
+          "requestUserNickname": "hahah",
+          "requestUserAgeLabel": 3,
+          "requestUserCareer": "行政管理",
+          "requestUserAvatar": "http://test-1251500528.file.myqcloud.com/hzpf188993c-e0c0-4731-82b3-1edded257125.jpg",
+          "requestUserGender": 1,
+          "requestId": 45,
+          "similar": 0.986
+        }
+      ],
+      "status": "_2",
+      "keywords": "通州土桥、不限",
+      "deadline": 1547189282606,
+      "desc": "根据您发布的“土桥新村”的房源，找到1位优质租客"
+    },
+    {
+      "id": 1090,
+      "deliveryTime": 1547102882606,
+      "houseId": 31686,
+      "houseUserId": 556532,
+      "communityId": 8576,
+      "communityName": "土桥新村",
+      "itemCount": 1,
+      "price": 25,
+      "items": [
+        {
+          "id": 1159,
+          "deliveryTime": 1547102882606,
+          "houseId": 31686,
+          "houseUserId": 556532,
+          "price": 25,
+          "requestUserId": 556507,
+          "requestUserNickname": "hahah",
+          "requestUserAgeLabel": 3,
+          "requestUserCareer": "行政管理",
+          "requestUserAvatar": "http://test-1251500528.file.myqcloud.com/hzpf188993c-e0c0-4731-82b3-1edded257125.jpg",
+          "requestUserGender": 1,
+          "requestId": 45,
+          "similar": 0.986
+        }
+      ],
+      "status": "_2",
+      "keywords": "通州土桥、不限",
+      "deadline": 1547189282606,
+      "desc": "根据您发布的“土桥新村”的房源，找到1位优质租客"
+    },
+    {
+      "id": 1091,
+      "deliveryTime": 1547102882606,
+      "houseId": 31686,
+      "houseUserId": 556532,
+      "communityId": 8576,
+      "communityName": "土桥新村",
+      "itemCount": 1,
+      "price": 25,
+      "items": [
+        {
+          "id": 1159,
+          "deliveryTime": 1547102882606,
+          "houseId": 31686,
+          "houseUserId": 556532,
+          "price": 25,
+          "requestUserId": 556507,
+          "requestUserNickname": "hahah",
+          "requestUserAgeLabel": 3,
+          "requestUserCareer": "行政管理",
+          "requestUserAvatar": "http://test-1251500528.file.myqcloud.com/hzpf188993c-e0c0-4731-82b3-1edded257125.jpg",
+          "requestUserGender": 1,
+          "requestId": 45,
+          "similar": 0.986
+        }
+      ],
+      "status": "_2",
+      "keywords": "通州土桥、不限",
+      "deadline": 1547189282606,
+      "desc": "根据您发布的“土桥新村”的房源，找到1位优质租客"
+    }
+  ]
+}
+```
