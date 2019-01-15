@@ -12731,14 +12731,3 @@ png格式图片
   ]
 }
 ```
-
-### 同意支付条款
-##### 接口:/UserController/agreePaymentTerms
-##### 请求方式:POST
-##### 成功返回值
-```
-{
-  "ret": 200,
-  "data": {}
-}
-```
