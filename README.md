@@ -12613,6 +12613,7 @@ png格式图片
       "itemCount": 1,
       "price": 20,
       "zuquOderId": 563,
+      "paymentTime": 1547362999999,
       "items": [
         {
           "id": 1215,
@@ -12644,6 +12645,7 @@ png格式图片
       "communityName": "土桥新村",
       "itemCount": 1,
       "price": 25,
+      "paymentTime": 1547362999999,
       "items": [
         {
           "id": 1159,
@@ -12675,6 +12677,7 @@ png格式图片
       "communityName": "土桥新村",
       "itemCount": 1,
       "price": 25,
+      "paymentTime": 1547362999999,
       "items": [
         {
           "id": 1159,
@@ -12706,6 +12709,7 @@ png格式图片
       "communityName": "土桥新村",
       "itemCount": 1,
       "price": 25,
+      "paymentTime": 1547362999999,
       "items": [
         {
           "id": 1159,
