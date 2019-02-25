@@ -2782,8 +2782,9 @@
       "subwayName": "1号线,5号线"
     },
     "seen": {
-      "seenCount": "2",
-      "avatar": "xxx,null,"
+      "seenCount": "3",
+      "avatar": "xxx,null,xxxxx",
+      "userType", "0,1,2"
     },
     "messages": [
       {
@@ -2961,8 +2962,9 @@
     },
     "messages": [],
     "seen": {
-      "seenCount": "1",
-      "avatar": "null,"
+      "seenCount": "3",
+      "avatar": "xx,xxx,xxxx",
+      "userType", "0,1,2"
     },
     "nearbyRentFriend": [],
     "liked": false,
