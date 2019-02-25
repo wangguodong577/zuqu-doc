@@ -2784,7 +2784,7 @@
     "seen": {
       "seenCount": "3",
       "avatar": "xxx,null,xxxxx",
-      "userType", "0,1,2"
+      "userType", "0,1,2"//0-普通用户，1-中介，2-房管员
     },
     "messages": [
       {
@@ -2964,8 +2964,8 @@
     "seen": {
       "seenCount": "3",
       "avatar": "xx,xxx,xxxx",
-      "userType", "0,1,2"
-    },
+	  "userType", "0,1,2"//0-普通用户，1-中介，2-房管员
+	},
     "nearbyRentFriend": [],
     "liked": false,
     "alterBonus": true
