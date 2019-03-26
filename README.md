@@ -12412,6 +12412,14 @@ png格式图片
 {
   "ret": 200,
   "data": {
+    "area": {
+      "isNew": false,
+      "id": 1142,
+      "cityId": 1,
+      "name": "朝阳",
+      "sort": 0,
+      "new": false
+    },
     "businessArea": {
       "isNew": false,
       "id": 1203,
@@ -12421,15 +12429,22 @@ png格式图片
       "pinyin": "wangjing",
       "new": false
     },
-    "area": {
-      "id": 1138,
+    "description": "您是否在找望京 / 宝星华庭 / 15号线-望京 / 15号线-望京 / 14号线-阜通 / 14号线-望京南 / 14号线-东湖渠的房子",
+    "community": {
+      "isNew": false,
+      "id": 379643,
+      "name": "宝星华庭",
+      "ajkId": 210692,
       "cityId": 1,
-      "name": "东城",
-      "sort": 0,
-      "setId": true,
-      "setCityId": true,
-      "setName": true,
-      "setSort": true
+      "areaId": 1142,
+      "businessAreaId": 1203,
+      "lon": 116.487544,
+      "lat": 40.005106,
+      "address": "阜通东大街",
+      "state": 1,
+      "businessAreaName": "望京",
+      "areaName": "朝阳",
+      "new": false
     }
   }
 }
