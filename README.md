@@ -12787,6 +12787,14 @@ png格式图片
     "ret": 200,
     "data": [
         {
+            "condition": {
+                "businessAreaName": "xx"
+                "lat": 40.002538,
+                "lon": 116.478002,
+                "price": 10000.0,
+                "type": "整租"
+                "note": "xxx"
+            },
             "minPrice": 4000,
             "houses": [
                 {
@@ -12832,6 +12840,14 @@ png格式图片
                 "10号线"
             ],
             "distance": "20",
+            "condition": {
+                "businessAreaName": "xx",
+                "lat": 40.002538,
+                "lon": 116.478002,
+                "price": 10000.0,
+                "type": "整租"
+                "note": "xxx"
+            },
             "minPrice": 4000,
             "houses": [
                 {
