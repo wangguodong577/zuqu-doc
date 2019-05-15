@@ -12752,3 +12752,124 @@ png格式图片
   ]
 }
 ```
+
+### 房源推荐接口
+##### 接口:http://zuqu.qingtengcloud.com/recommend
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|condition|字符串|见示例|是|
+##### 参数示例
+```
+{
+  "encryptedMobileNumber": "pZq4K3CsaS9KDDL2aTREFA==",
+  "items": [
+    {
+      "businessAreaName": "望京",
+      "price": 10000,
+      "type": "整租",
+      "note": "望京南地铁站附近的2居室，价格最好10000以下"
+    },
+    {
+      "businessAreaName": "梨园",
+      "price": 4000,
+      "type": "整租",
+      "note": "通州临河里地铁站后者土桥附近的2居室，价格4000左右"
+    }
+  ]
+}
+
+```
+##### 成功返回值
+```
+{
+    "ret": 200,
+    "data": [
+        {
+            "minPrice": 4000,
+            "houses": [
+                {
+                    "areaName": "朝阳",
+                    "mobileNumber": "13222002833",
+                    "rentType": "整套",
+                    "businessAreaName": "望京",
+                    "communityName": "南湖佳苑",
+                    "type": "整租",
+                    "pictureCount": 8,
+                    "buildArea": 50.0,
+                    "room": 2
+                },
+                {
+                    "areaName": "朝阳",
+                    "mobileNumber": "18646413223",
+                    "rentType": "整套",
+                    "businessAreaName": "望京",
+                    "communityName": "国风北京",
+                    "type": "整租",
+                    "pictureCount": 3,
+                    "buildArea": 40.0,
+                    "room": 1
+                },
+                {
+                    "areaName": "朝阳",
+                    "mobileNumber": "13911173274",
+                    "rentType": "整套",
+                    "businessAreaName": "望京",
+                    "communityName": "国风北京",
+                    "type": "整租",
+                    "pictureCount": 6,
+                    "buildArea": 98.0,
+                    "room": 3
+                }
+            ],
+            "businessAreaName": "望京"
+        },
+        {
+            "avgPriceDiff": "55%",
+            "subways": [
+                "1号线",
+                "10号线"
+            ],
+            "distance": "20",
+            "minPrice": 4000,
+            "houses": [
+                {
+                    "areaName": "通州",
+                    "mobileNumber": "15731455554",
+                    "rentType": "整套",
+                    "businessAreaName": "梨园",
+                    "communityName": "华业东方玫瑰",
+                    "type": "整租",
+                    "pictureCount": 8,
+                    "buildArea": 90.0,
+                    "room": 2
+                },
+                {
+                    "areaName": "通州",
+                    "mobileNumber": "15510191966",
+                    "rentType": "整套",
+                    "businessAreaName": "梨园",
+                    "communityName": "葛布店东里",
+                    "type": "整租",
+                    "pictureCount": 9,
+                    "buildArea": null,
+                    "room": 2
+                },
+                {
+                    "areaName": "通州",
+                    "mobileNumber": "17804817807",
+                    "rentType": "整套",
+                    "businessAreaName": "梨园",
+                    "communityName": "新城嘉园",
+                    "type": "整租",
+                    "pictureCount": 6,
+                    "buildArea": 88.0,
+                    "room": 2
+                }
+            ],
+            "businessAreaName": "梨园"
+        }
+    ]
+}
+```
