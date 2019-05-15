@@ -12873,3 +12873,82 @@ png格式图片
     ]
 }
 ```
+
+### 房源推荐翻页接口
+##### 接口:http://zuqu.qingtengcloud.com/recommendMore
+##### 请求方式:POST
+##### 接口参数
+|参数名|类型|描述|是否必须|
+|---|---|---|---|
+|encryptedMobileNumber|字符串|加密手机号码|是|
+|businessAreaName|字符串|商圈名|是|
+|lat|double|纬度|是|
+|lon|double|经度|是|
+|price|double|价格|是|
+|type|字符串|类型，整租或合租|是|
+|note|字符串|备注|是|
+|page|int|1开始|是|
+|pageSize|int|>=1|是|
+##### 成功返回值
+```
+{
+  "ret": 200,
+  "data": [
+    {
+      "areaName": "朝阳",
+      "mobileNumber": "17611456522",
+      "rentType": "整套",
+      "businessAreaName": "望京",
+      "communityName": "宝星华庭",
+      "type": "整租",
+      "pictureCount": 1,
+      "buildArea": 50,
+      "room": 1
+    },
+    {
+      "areaName": "朝阳",
+      "mobileNumber": "13508087777",
+      "rentType": "整套",
+      "businessAreaName": "望京",
+      "communityName": "宝星华庭",
+      "type": "整租",
+      "pictureCount": 1,
+      "buildArea": 500,
+      "room": 9
+    },
+    {
+      "areaName": "朝阳",
+      "mobileNumber": "15910675625",
+      "rentType": "整套",
+      "businessAreaName": "望京",
+      "communityName": "望京花园东区",
+      "type": "整租",
+      "pictureCount": 1,
+      "buildArea": 23,
+      "room": 2
+    },
+    {
+      "areaName": "朝阳",
+      "mobileNumber": null,
+      "rentType": "整套",
+      "businessAreaName": "望京",
+      "communityName": "望京花园",
+      "type": "整租",
+      "pictureCount": 1,
+      "buildArea": 98,
+      "room": 1
+    },
+    {
+      "areaName": "朝阳",
+      "mobileNumber": "17110001026",
+      "rentType": "整套",
+      "businessAreaName": "望京",
+      "communityName": "宝星华庭",
+      "type": "整租",
+      "pictureCount": 1,
+      "buildArea": 23,
+      "room": 1
+    }
+  ]
+}
+```
