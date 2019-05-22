@@ -2740,7 +2740,7 @@
       "pf": "iOS",
       "aliCredit": false
     },
-    "icons":["https://prod-1256450840.file.myqcloud.com/hzp/m/img/chuang.png","https://prod-1256450840.file.myqcloud.com/hzp/m/img/shafa.png","https://prod-1256450840.file.myqcloud.com/hzp/m/img/xiyiji.png",
+	"icons":[{"url":"https://prod-1256450840.file.myqcloud.com/hzp/m/img/chuang.png","name":"床"},{"url":"https://prod-1256450840.file.myqcloud.com/hzp/m/img/shafa.png","name":"沙发"},{"url":"https://prod-1256450840.file.myqcloud.com/hzp/m/img/xiyiji.png","name":"洗衣机"}],
     "house": {
       "id": 2,
       "rent": 2345,
