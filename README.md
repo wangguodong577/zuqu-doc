@@ -2740,6 +2740,7 @@
       "pf": "iOS",
       "aliCredit": false
     },
+    "icons":["https://prod-1256450840.file.myqcloud.com/hzp/m/img/chuang.png","https://prod-1256450840.file.myqcloud.com/hzp/m/img/shafa.png","https://prod-1256450840.file.myqcloud.com/hzp/m/img/xiyiji.png",
     "house": {
       "id": 2,
       "rent": 2345,
