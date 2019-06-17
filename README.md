@@ -1553,12 +1553,158 @@
 ##### 接口参数
 |参数名|类型|描述|是否必须|
 |---|---|---|---|
+|cityId|Long|城市Id|是|
 
 ##### 成功返回值
 ```
 {
   "ret": 200,
-  "data": {}
+  "data": [
+    {
+      "isNew": false,
+      "id": 236713,
+      "cityId": 1,
+      "name": "1号线",
+      "sort": 1,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236717,
+      "cityId": 1,
+      "name": "2号线",
+      "sort": 2,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 240099,
+      "cityId": 1,
+      "name": "4号线",
+      "sort": 4,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236718,
+      "cityId": 1,
+      "name": "5号线",
+      "sort": 5,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 640909,
+      "cityId": 1,
+      "name": "6号线",
+      "sort": 6,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1101595,
+      "cityId": 1,
+      "name": "7号线",
+      "sort": 7,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236719,
+      "cityId": 1,
+      "name": "8号线",
+      "sort": 8,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 634618,
+      "cityId": 1,
+      "name": "9号线",
+      "sort": 9,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236716,
+      "cityId": 1,
+      "name": "10号线",
+      "sort": 10,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236714,
+      "cityId": 1,
+      "name": "13号线",
+      "sort": 13,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 677835,
+      "cityId": 1,
+      "name": "14号线",
+      "sort": 14,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 572986,
+      "cityId": 1,
+      "name": "15号线",
+      "sort": 15,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573034,
+      "cityId": 1,
+      "name": "房山线",
+      "sort": 100,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573045,
+      "cityId": 1,
+      "name": "大兴线",
+      "sort": 101,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573335,
+      "cityId": 1,
+      "name": "亦庄线",
+      "sort": 102,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236715,
+      "cityId": 1,
+      "name": "八通线",
+      "sort": 103,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 236720,
+      "cityId": 1,
+      "name": "机场线",
+      "sort": 104,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 572984,
+      "cityId": 1,
+      "name": "昌平线",
+      "sort": 105,
+      "new": false
+    }
+  ]
 }
 ```
 
@@ -1574,7 +1720,104 @@
 ```
 {
   "ret": 200,
-  "data": []
+  "data": [
+    {
+      "isNew": false,
+      "id": 236785,
+      "name": "西二旗",
+      "lat": 40.058922,
+      "lon": 116.312615,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573154,
+      "name": "生命科学园站",
+      "lat": 40.100969,
+      "lon": 116.30034,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573155,
+      "name": "朱辛庄站",
+      "lat": 40.110335,
+      "lon": 116.320135,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573843,
+      "name": "巩华城站",
+      "lat": 40.137317,
+      "lon": 116.300716,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573508,
+      "name": "沙河站",
+      "lat": 40.15466,
+      "lon": 116.29491,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573841,
+      "name": "沙河高教园站",
+      "lat": 40.171012,
+      "lon": 116.286757,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 573842,
+      "name": "南邵站",
+      "lat": 40.213177,
+      "lon": 116.294428,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1102110,
+      "name": "北邵洼",
+      "lat": 40.228131,
+      "lon": 116.288341,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1102111,
+      "name": "昌平东关",
+      "lat": 40.227963,
+      "lon": 116.268642,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1102113,
+      "name": "昌平",
+      "lat": 40.226349,
+      "lon": 116.24017,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1102114,
+      "name": "十三陵景区",
+      "lat": 40.245712,
+      "lon": 116.214993,
+      "new": false
+    },
+    {
+      "isNew": false,
+      "id": 1102115,
+      "name": "昌平西山口",
+      "lat": 40.250283,
+      "lon": 116.202134,
+      "new": false
+    }
+  ]
 }
 ```
 
