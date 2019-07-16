@@ -12711,54 +12711,6 @@ png格式图片
 }
 ```
 
-### 匹配记录
-##### 接口:/Match/deliveries
-##### 请求方式:GET
-##### 接口参数
-|参数名|类型|描述|是否必须|
-|---|---|---|---|
-|page|数字|>=1|是|
-|pageSize|数字|>=1|是|
-##### 成功返回值
-```
-{
-  "ret": 200,
-  "data": [
-    {
-      "id": 610,
-      "deliveryTime": 1547026800076,//匹配时间
-      "deadline":1547178187108,//过期时间
-      "houseId": 31600,
-      "houseUserId": 556262,
-      "communityId": 8312,
-      "communityName": "海德堡花园",
-      "itemCount": 1,
-      "price": 30,
-      "items": [
-        {
-          "id": 694,
-          "deliveryTime": 1547026800076,
-          "houseId": 31600,
-          "houseUserId": 556262,
-          "price": 30,
-          "requestUserId": 556473,
-          "requestUserNickname": "铛铛",
-          "requestUserAgeLabel": 5,
-          "requestUserCareer": "设计",
-          "requestUserAvatar", "xxx",
-          "requestUserGender": 1,
-          "requestId": 38,
-          "similar": 0.965
-        }
-      ],
-      "status": "_0",//_0未支付，_99已过期，_2支付成功
-      "desc": "根据您发布的“海德堡花园”的房源，找到1位优质租客",
-      "keywords":"昌平北七家、望京国际商业中心、6000-8000元"
-    }
-  ]
-}
-```
-
 ### 生成支付签名
 ##### 接口:/Match/generateOrder
 ##### 请求方式:POST
